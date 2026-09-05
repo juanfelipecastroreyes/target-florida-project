@@ -1,0 +1,88 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="56883FE9-6AC5-EBD0-1665-BA2DAC6D925C" name="LAYAWAY">
+<createdBy>juanfelipecastroreyes</createdBy>
+<createdTime>2026-09-05 17:34:47 UTC</createdTime>
+<ownerDesignName>Diagrama proyecto de curso</ownerDesignName>
+<engineerTo>
+<item key="C53C8D7F-BB8D-B5A5-0680-C28D3B96BC89" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="FEFD2FD0-CD24-C3E0-59A3-392ED03534F7">
+<createdBy>juanfelipecastroreyes</createdBy>
+<createdTime>2026-09-05 17:34:55 UTC</createdTime>
+<ownerDesignName>Diagrama proyecto de curso</ownerDesignName>
+<engineerTo>
+<item key="C53C8D7F-BB8D-B5A5-0680-C28D3B96BC89" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="deposit_amount" id="04ABA08D-4516-5EDF-0313-0A54D5F01507">
+<createdBy>juanfelipecastroreyes</createdBy>
+<createdTime>2026-09-05 17:34:58 UTC</createdTime>
+<ownerDesignName>Diagrama proyecto de curso</ownerDesignName>
+<engineerTo>
+<item key="C53C8D7F-BB8D-B5A5-0680-C28D3B96BC89" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="due_date" id="8346D932-6200-5395-BBC8-EF08FCBFDC65">
+<createdBy>juanfelipecastroreyes</createdBy>
+<createdTime>2026-09-05 17:35:12 UTC</createdTime>
+<ownerDesignName>Diagrama proyecto de curso</ownerDesignName>
+<engineerTo>
+<item key="C53C8D7F-BB8D-B5A5-0680-C28D3B96BC89" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id1" id="8A768AD2-BC44-09E5-4D0E-F1739E912D77">
+<createdBy>juanfelipecastroreyes</createdBy>
+<createdTime>2026-09-05 18:06:43 UTC</createdTime>
+<generatorID>68A8DADC-530E-F10B-FD8D-27DAE8CCE153</generatorID>
+<ownerDesignName>Diagrama proyecto de curso</ownerDesignName>
+<engineerTo>
+<item key="C53C8D7F-BB8D-B5A5-0680-C28D3B96BC89" value="true"/>
+</engineerTo>
+<referedAttribute>78F66C06-E4B7-1E71-4405-DABF52C089FC</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id2" id="60C52138-035D-B774-AEC8-0FCF75D062E1">
+<createdBy>juanfelipecastroreyes</createdBy>
+<createdTime>2026-09-05 18:22:25 UTC</createdTime>
+<generatorID>71E3D5A0-81EF-C4FA-F1FC-BB061FE31BC6</generatorID>
+<ownerDesignName>Diagrama proyecto de curso</ownerDesignName>
+<engineerTo>
+<item key="C53C8D7F-BB8D-B5A5-0680-C28D3B96BC89" value="true"/>
+</engineerTo>
+<referedAttribute>78F66C06-E4B7-1E71-4405-DABF52C089FC</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="43DFC242-0417-962C-F485-8CC23E109E53" name="LAYAWAY PK">
+<createdBy>juanfelipecastroreyes</createdBy>
+<createdTime>2026-09-05 17:35:10 UTC</createdTime>
+<ownerDesignName>Diagrama proyecto de curso</ownerDesignName>
+<engineerTo>
+<item key="C53C8D7F-BB8D-B5A5-0680-C28D3B96BC89" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>FEFD2FD0-CD24-C3E0-59A3-392ED03534F7</attributeRef>
+<attributeRef>8A768AD2-BC44-09E5-4D0E-F1739E912D77</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

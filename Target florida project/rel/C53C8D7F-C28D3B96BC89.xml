@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<relationalModel class="oracle.dbtools.crest.model.design.relational.RelationalDesign" name="Relational_1" id="C53C8D7F-BB8D-B5A5-0680-C28D3B96BC89" mainViewID="D80D40DD-1DC4-B040-7BBB-9C8EA29EE2F0">
+<createdBy>juanfelipecastroreyes</createdBy>
+<createdTime>2026-09-05 17:23:20 UTC</createdTime>
+<ownerDesignName>Diagrama proyecto de curso</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+<selectedRDBMSSite>32076570-2523-435C-2E92-BF29817DFF70</selectedRDBMSSite>
+</relationalModel>

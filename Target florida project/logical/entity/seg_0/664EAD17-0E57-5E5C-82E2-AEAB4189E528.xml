@@ -1,0 +1,96 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="664EAD17-0E57-5E5C-82E2-AEAB4189E528" name="SPECIAL_ORDER">
+<createdBy>juanfelipecastroreyes</createdBy>
+<createdTime>2026-09-05 17:29:34 UTC</createdTime>
+<ownerDesignName>Diagrama proyecto de curso</ownerDesignName>
+<engineerTo>
+<item key="C53C8D7F-BB8D-B5A5-0680-C28D3B96BC89" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="89BE5D65-C0C8-58EB-FAC8-BC03B62D7577">
+<createdBy>juanfelipecastroreyes</createdBy>
+<createdTime>2026-09-05 17:29:38 UTC</createdTime>
+<ownerDesignName>Diagrama proyecto de curso</ownerDesignName>
+<engineerTo>
+<item key="C53C8D7F-BB8D-B5A5-0680-C28D3B96BC89" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="item_description" id="171E2730-8E55-49DD-3C2C-C844984F0AA8">
+<createdBy>juanfelipecastroreyes</createdBy>
+<createdTime>2026-09-05 17:29:44 UTC</createdTime>
+<ownerDesignName>Diagrama proyecto de curso</ownerDesignName>
+<engineerTo>
+<item key="C53C8D7F-BB8D-B5A5-0680-C28D3B96BC89" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="origin_city" id="AF1C358B-43A8-1695-8B0B-A21BAA99EAD5">
+<createdBy>juanfelipecastroreyes</createdBy>
+<createdTime>2026-09-05 17:29:51 UTC</createdTime>
+<ownerDesignName>Diagrama proyecto de curso</ownerDesignName>
+<engineerTo>
+<item key="C53C8D7F-BB8D-B5A5-0680-C28D3B96BC89" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="deposit_amount" id="9A74DB30-B8BD-3CAE-7EA9-44397FA91C7E">
+<createdBy>juanfelipecastroreyes</createdBy>
+<createdTime>2026-09-05 17:29:58 UTC</createdTime>
+<ownerDesignName>Diagrama proyecto de curso</ownerDesignName>
+<engineerTo>
+<item key="C53C8D7F-BB8D-B5A5-0680-C28D3B96BC89" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="status" id="B05CF3BC-93C8-9B07-A25A-86B53A6E5068">
+<createdBy>juanfelipecastroreyes</createdBy>
+<createdTime>2026-09-05 17:30:15 UTC</createdTime>
+<ownerDesignName>Diagrama proyecto de curso</ownerDesignName>
+<engineerTo>
+<item key="C53C8D7F-BB8D-B5A5-0680-C28D3B96BC89" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id1" id="A046CD85-8FF1-88E8-CCB2-CCAC40D29008">
+<createdBy>juanfelipecastroreyes</createdBy>
+<createdTime>2026-09-05 17:56:40 UTC</createdTime>
+<generatorID>18B7618F-454B-B1DF-6B64-34434C21912C</generatorID>
+<ownerDesignName>Diagrama proyecto de curso</ownerDesignName>
+<engineerTo>
+<item key="C53C8D7F-BB8D-B5A5-0680-C28D3B96BC89" value="true"/>
+</engineerTo>
+<referedAttribute>78F66C06-E4B7-1E71-4405-DABF52C089FC</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="9F529A5D-4EE3-1CEE-9632-3CA836C9DD0D" name="SPECIAL_ORDER PK">
+<createdBy>juanfelipecastroreyes</createdBy>
+<createdTime>2026-09-05 17:29:43 UTC</createdTime>
+<ownerDesignName>Diagrama proyecto de curso</ownerDesignName>
+<engineerTo>
+<item key="C53C8D7F-BB8D-B5A5-0680-C28D3B96BC89" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>89BE5D65-C0C8-58EB-FAC8-BC03B62D7577</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

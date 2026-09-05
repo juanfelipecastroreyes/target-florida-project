@@ -1,0 +1,65 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="7A64DC27-BD45-FD91-72DF-35B6DBDC4894" name="BATCH">
+<createdBy>juanfelipecastroreyes</createdBy>
+<createdTime>2026-09-05 17:31:29 UTC</createdTime>
+<ownerDesignName>Diagrama proyecto de curso</ownerDesignName>
+<engineerTo>
+<item key="C53C8D7F-BB8D-B5A5-0680-C28D3B96BC89" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="39BC6F82-4B71-9F62-0A0E-51A8FD8248F6">
+<createdBy>juanfelipecastroreyes</createdBy>
+<createdTime>2026-09-05 17:31:35 UTC</createdTime>
+<ownerDesignName>Diagrama proyecto de curso</ownerDesignName>
+<engineerTo>
+<item key="C53C8D7F-BB8D-B5A5-0680-C28D3B96BC89" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="entry_date" id="B8F8BABE-4F5E-5CA5-51E5-744371AE6EC6">
+<createdBy>juanfelipecastroreyes</createdBy>
+<createdTime>2026-09-05 17:31:40 UTC</createdTime>
+<ownerDesignName>Diagrama proyecto de curso</ownerDesignName>
+<engineerTo>
+<item key="C53C8D7F-BB8D-B5A5-0680-C28D3B96BC89" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id1" id="48AF64D8-C7B9-21F5-C41F-433F340E9265">
+<createdBy>juanfelipecastroreyes</createdBy>
+<createdTime>2026-09-05 17:52:59 UTC</createdTime>
+<generatorID>D313461C-445D-50D8-8D50-E65217826DB0</generatorID>
+<ownerDesignName>Diagrama proyecto de curso</ownerDesignName>
+<engineerTo>
+<item key="C53C8D7F-BB8D-B5A5-0680-C28D3B96BC89" value="true"/>
+</engineerTo>
+<referedAttribute>7059F198-7E18-16D5-D6A3-F9BFD4FF349A</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="60558562-D0F4-C67E-06C0-5196502D8456" name="BATCH PK">
+<createdBy>juanfelipecastroreyes</createdBy>
+<createdTime>2026-09-05 17:31:37 UTC</createdTime>
+<ownerDesignName>Diagrama proyecto de curso</ownerDesignName>
+<engineerTo>
+<item key="C53C8D7F-BB8D-B5A5-0680-C28D3B96BC89" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>39BC6F82-4B71-9F62-0A0E-51A8FD8248F6</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

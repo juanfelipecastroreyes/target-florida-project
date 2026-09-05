@@ -1,0 +1,100 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="97CCA9BB-1174-4D77-EFAF-E0EE96CDDB41" name="BATCH_DETAIL">
+<createdBy>juanfelipecastroreyes</createdBy>
+<createdTime>2026-09-05 17:30:28 UTC</createdTime>
+<ownerDesignName>Diagrama proyecto de curso</ownerDesignName>
+<engineerTo>
+<item key="C53C8D7F-BB8D-B5A5-0680-C28D3B96BC89" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="90075A89-213A-AA77-7A4F-EF9039A60C9B">
+<createdBy>juanfelipecastroreyes</createdBy>
+<createdTime>2026-09-05 17:30:41 UTC</createdTime>
+<ownerDesignName>Diagrama proyecto de curso</ownerDesignName>
+<engineerTo>
+<item key="C53C8D7F-BB8D-B5A5-0680-C28D3B96BC89" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="quantity" id="8BE37719-229B-D044-3424-7406772325B8">
+<createdBy>juanfelipecastroreyes</createdBy>
+<createdTime>2026-09-05 17:30:49 UTC</createdTime>
+<ownerDesignName>Diagrama proyecto de curso</ownerDesignName>
+<engineerTo>
+<item key="C53C8D7F-BB8D-B5A5-0680-C28D3B96BC89" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="unit_cost" id="007C55B1-B274-87A2-A82C-631B97ED7EB1">
+<createdBy>juanfelipecastroreyes</createdBy>
+<createdTime>2026-09-05 17:31:00 UTC</createdTime>
+<ownerDesignName>Diagrama proyecto de curso</ownerDesignName>
+<engineerTo>
+<item key="C53C8D7F-BB8D-B5A5-0680-C28D3B96BC89" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id1" id="6B1ED05D-B837-8A46-3663-915BDEED98D0">
+<createdBy>juanfelipecastroreyes</createdBy>
+<createdTime>2026-09-05 18:04:26 UTC</createdTime>
+<generatorID>8240820F-41EB-92FB-21C0-224FF0425785</generatorID>
+<ownerDesignName>Diagrama proyecto de curso</ownerDesignName>
+<engineerTo>
+<item key="C53C8D7F-BB8D-B5A5-0680-C28D3B96BC89" value="true"/>
+</engineerTo>
+<referedAttribute>39BC6F82-4B71-9F62-0A0E-51A8FD8248F6</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id2" id="73E6796A-FCF4-075C-7537-3152CC790394">
+<createdBy>juanfelipecastroreyes</createdBy>
+<createdTime>2026-09-05 18:29:39 UTC</createdTime>
+<generatorID>C287DD8D-1EE6-5E46-B6FA-E0C246A5E699</generatorID>
+<ownerDesignName>Diagrama proyecto de curso</ownerDesignName>
+<engineerTo>
+<item key="C53C8D7F-BB8D-B5A5-0680-C28D3B96BC89" value="true"/>
+</engineerTo>
+<referedAttribute>D36CAB07-ABEB-BA24-8FDA-694857A9F4AB</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id11" id="05615C8B-3051-3768-968D-47382717B895">
+<createdBy>juanfelipecastroreyes</createdBy>
+<createdTime>2026-09-05 18:29:39 UTC</createdTime>
+<generatorID>C287DD8D-1EE6-5E46-B6FA-E0C246A5E699</generatorID>
+<ownerDesignName>Diagrama proyecto de curso</ownerDesignName>
+<engineerTo>
+<item key="C53C8D7F-BB8D-B5A5-0680-C28D3B96BC89" value="true"/>
+</engineerTo>
+<referedAttribute>D06369EE-008F-C465-D300-C1053103438F</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="0A1E9189-62CA-F535-2C9C-CCC8D9DA7B79" name="BATCH_DETAIL PK">
+<createdBy>juanfelipecastroreyes</createdBy>
+<createdTime>2026-09-05 17:30:45 UTC</createdTime>
+<ownerDesignName>Diagrama proyecto de curso</ownerDesignName>
+<engineerTo>
+<item key="C53C8D7F-BB8D-B5A5-0680-C28D3B96BC89" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>90075A89-213A-AA77-7A4F-EF9039A60C9B</attributeRef>
+<attributeRef>6B1ED05D-B837-8A46-3663-915BDEED98D0</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
