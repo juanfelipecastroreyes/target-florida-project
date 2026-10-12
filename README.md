@@ -25,6 +25,7 @@ Agosto 3 de 2026 — actualizado para la Entrega 2 (octubre de 2026)
 | `Diagramas segunda entrega.dmd` + `Diagramas segunda entrega/` | Diseño de Oracle SQL Developer Data Modeler (modelo lógico y relacional) |
 | `Target_Florida_DDL.sql` | Script DDL para Oracle generado a partir del modelo (tablas, PK, UK, CHECK y FK) |
 | `Bitacora_Seguimiento_Entrega2.pdf` / `.docx` | Bitácora de seguimiento de la Entrega 2 (áreas por integrante) |
+| `Acta_Reuniones_Entrega2.pdf` / `.docx` | Acta de las reuniones del equipo durante la Entrega 2 |
 
 
 ## Descripción del caso
