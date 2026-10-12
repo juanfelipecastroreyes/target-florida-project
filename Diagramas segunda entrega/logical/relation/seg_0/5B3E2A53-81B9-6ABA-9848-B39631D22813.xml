@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="SUPPLIER_BATCH" directorySegmentName="seg_0" id="5B3E2A53-81B9-6ABA-9848-B39631D22813">
+<createdBy>danie</createdBy>
+<createdTime>2026-10-04 00:26:02 UTC</createdTime>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<engineerTo>
+<item key="FCBC0C2E-3F4E-FC4F-9B6C-0E3AFFD0E7E8" value="true" />
+</engineerTo>
+<sourcePk>4A5A4779-AACB-F66F-A065-7DC934237056</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>CE847356-E6E8-6468-290C-0A8F454AFE9B</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>5D29579D-D682-2360-C40B-7634CC3FEFDF</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

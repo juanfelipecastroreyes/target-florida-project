@@ -1,0 +1,70 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="3B0E7411-B51B-A148-0D26-CFE895CFBDB0" name="CATEGORY">
+<createdBy>danie</createdBy>
+<createdTime>2026-10-03 23:39:21 UTC</createdTime>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<engineerTo>
+<item key="FCBC0C2E-3F4E-FC4F-9B6C-0E3AFFD0E7E8" value="true" />
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="category_id" id="B2C94049-832C-E692-E48C-9ADA259E633E">
+<createdBy>danie</createdBy>
+<createdTime>2026-10-03 23:39:26 UTC</createdTime>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<engineerTo>
+<item key="FCBC0C2E-3F4E-FC4F-9B6C-0E3AFFD0E7E8" value="true" />
+</engineerTo>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+</Attribute>
+<Attribute name="name" id="15647C1F-BA74-E66E-431B-5C8A5FC8AC05">
+<createdBy>danie</createdBy>
+<createdTime>2026-10-03 23:39:30 UTC</createdTime>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<engineerTo>
+<item key="FCBC0C2E-3F4E-FC4F-9B6C-0E3AFFD0E7E8" value="true" />
+</engineerTo>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="25E7384C-0B82-C640-6118-FC2D991841C4" name="CATEGORY PK">
+<createdBy>danie</createdBy>
+<createdTime>2026-10-03 23:39:29 UTC</createdTime>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<engineerTo>
+<item key="FCBC0C2E-3F4E-FC4F-9B6C-0E3AFFD0E7E8" value="true" />
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>B2C94049-832C-E692-E48C-9ADA259E633E</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="53761243-38C7-4794-82DD-B63BEF220BAD" name="CATEGORY NAME_UN">
+<createdBy>JuanFelipe</createdBy>
+<createdTime>2026-10-11 21:00:00 UTC</createdTime>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<engineerTo>
+<item key="FCBC0C2E-3F4E-FC4F-9B6C-0E3AFFD0E7E8" value="true" />
+</engineerTo>
+<pk>false</pk>
+<usedAttributes>
+<attributeRef>15647C1F-BA74-E66E-431B-5C8A5FC8AC05</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

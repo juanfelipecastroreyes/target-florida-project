@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="506D8980-A0B0-7E0A-FCE6-8B86DA174BF4" name="BATCH">
+<createdBy>Daniel</createdBy>
+<createdTime>2026-10-04 21:19:02 UTC</createdTime>
+<generatorID>5D29579D-D682-2360-C40B-7634CC3FEFDF</generatorID>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="3D04507C-DBBA-6FCE-723A-D790551B0384">
+<createdBy>Daniel</createdBy>
+<createdTime>2026-10-04 21:19:02 UTC</createdTime>
+<generatorID>5965F9D1-A9E5-8C88-7A16-A2DDC8746079</generatorID>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="entry_date" id="BAB2E077-BD10-F930-0A84-2D67EB171B69">
+<createdBy>Daniel</createdBy>
+<createdTime>2026-10-04 21:19:02 UTC</createdTime>
+<generatorID>0C119585-BEC2-D9BC-8EE9-367BF9FB86B6</generatorID>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SUPPLIER_id" id="AC15D419-0047-E563-A5B9-91CE85F52D5A">
+<createdBy>Daniel</createdBy>
+<createdTime>2026-10-04 21:19:02 UTC</createdTime>
+<generatorID>654352BA-B1BE-8E68-8D95-FF70FEEFA748</generatorID>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E0B72D09-720A-7594-A897-D066CF2C263C" referredColumn="1A7443B4-1ADD-C1BF-1469-30A26728104C" />
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B024E6DF-88AA-5124-5FAE-6D6702AD0D8D" name="BATCH_PK">
+<createdBy>Daniel</createdBy>
+<createdTime>2026-10-04 21:19:02 UTC</createdTime>
+<generatorID>24EB9B5A-2A29-8398-1441-8A571F2DFA96</generatorID>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3D04507C-DBBA-6FCE-723A-D790551B0384" />
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="230FE26E-0433-C3CD-880D-EA6BE4C003CE" name="BATCH_SUPPLIER_FK">
+<createdBy>Daniel</createdBy>
+<createdTime>2026-10-04 21:19:02 UTC</createdTime>
+<generatorID>5B3E2A53-81B9-6ABA-9848-B39631D22813</generatorID>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AC15D419-0047-E563-A5B9-91CE85F52D5A" />
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

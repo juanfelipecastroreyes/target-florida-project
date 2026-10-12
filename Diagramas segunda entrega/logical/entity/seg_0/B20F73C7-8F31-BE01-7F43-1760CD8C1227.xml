@@ -1,0 +1,96 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B20F73C7-8F31-BE01-7F43-1760CD8C1227" name="BATCH_DETAIL">
+<createdBy>danie</createdBy>
+<createdTime>2026-10-03 23:42:53 UTC</createdTime>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<engineerTo>
+<item key="FCBC0C2E-3F4E-FC4F-9B6C-0E3AFFD0E7E8" value="true" />
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="quantity" id="E228E3A1-E4BC-9A6A-9454-940879B1631F">
+<createdBy>danie</createdBy>
+<createdTime>2026-10-03 23:43:01 UTC</createdTime>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<engineerTo>
+<item key="FCBC0C2E-3F4E-FC4F-9B6C-0E3AFFD0E7E8" value="true" />
+</engineerTo>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="quantity &gt; 0" />
+</checkConstraint>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+</Attribute>
+<Attribute name="unit_cost" id="406B073B-5FDB-1CE0-017D-0A8045E336F1">
+<createdBy>danie</createdBy>
+<createdTime>2026-10-03 23:43:04 UTC</createdTime>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<engineerTo>
+<item key="FCBC0C2E-3F4E-FC4F-9B6C-0E3AFFD0E7E8" value="true" />
+</engineerTo>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="unit_cost &gt; 0" />
+</checkConstraint>
+<ownDataTypeParameters>,12,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="BATCH_id" id="45F8C504-F3C7-EC6D-FCBD-271F72E73A3A">
+<createdBy>danie</createdBy>
+<createdTime>2026-10-04 00:26:25 UTC</createdTime>
+<generatorID>8E17FC27-48B6-2760-A718-A7FB0072A318</generatorID>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<engineerTo>
+<item key="FCBC0C2E-3F4E-FC4F-9B6C-0E3AFFD0E7E8" value="true" />
+</engineerTo>
+<referedAttribute>5965F9D1-A9E5-8C88-7A16-A2DDC8746079</referedAttribute>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+</Attribute>
+<Attribute name="VARIANT_variant_id" id="F1D044A5-4FE0-7791-5495-A35329B8C375">
+<createdBy>danie</createdBy>
+<createdTime>2026-10-04 00:26:47 UTC</createdTime>
+<generatorID>1E91AA10-82BA-9EE6-919D-E5E056C4A4B0</generatorID>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<engineerTo>
+<item key="FCBC0C2E-3F4E-FC4F-9B6C-0E3AFFD0E7E8" value="true" />
+</engineerTo>
+<referedAttribute>F213DE6E-40BE-978F-8087-830D2755F95F</referedAttribute>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="1B7973D1-6B09-42E7-AF50-8631FD06282B" name="BATCH_DETAIL PK">
+<createdBy>JuanFelipe</createdBy>
+<createdTime>2026-10-11 20:30:00 UTC</createdTime>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<engineerTo>
+<item key="FCBC0C2E-3F4E-FC4F-9B6C-0E3AFFD0E7E8" value="true" />
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>45F8C504-F3C7-EC6D-FCBD-271F72E73A3A</attributeRef>
+<attributeRef>F1D044A5-4FE0-7791-5495-A35329B8C375</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

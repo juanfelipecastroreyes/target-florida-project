@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="PAYMENT_METHOD_PAYMENT" directorySegmentName="seg_0" id="F9262A70-2BB3-58A2-CF8E-0C4BE22134A2">
+<createdBy>danie</createdBy>
+<createdTime>2026-10-04 00:55:26 UTC</createdTime>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<engineerTo>
+<item key="FCBC0C2E-3F4E-FC4F-9B6C-0E3AFFD0E7E8" value="true" />
+</engineerTo>
+<sourcePk>6A382E0D-9F13-BAAF-41C5-37809434A98B</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>16C8061B-B2C2-3A32-E368-1C7F2F2B466F</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>B478E780-3A59-47AF-5228-D091D188438D</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

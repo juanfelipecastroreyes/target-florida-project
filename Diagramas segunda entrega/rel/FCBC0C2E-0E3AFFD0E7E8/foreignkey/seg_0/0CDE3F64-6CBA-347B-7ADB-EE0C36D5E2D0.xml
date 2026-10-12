@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="0CDE3F64-6CBA-347B-7ADB-EE0C36D5E2D0" containerWithKeyObject="7D861D2D-D781-5B1B-F5C6-92CFA41A3281" localFKIndex="790CC3AA-6C5F-5097-8262-CC9E3570045B" name="LAYAWAY_DETAIL_VARIANT_FK">
+<createdBy>Daniel</createdBy>
+<createdTime>2026-10-04 21:19:02 UTC</createdTime>
+<generatorID>04A97D44-BB01-6CD4-FD5B-12DC7B6A2C7B</generatorID>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<referredTableLongName>VARIANT</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>37CD6938-27D3-DFA5-B796-0CBC0B44C6FA</referredTableID>
+<keyObject>9491AC53-B86A-7930-F04F-A248F64B08E2</keyObject>
+<referredKeyID>9491AC53-B86A-7930-F04F-A248F64B08E2</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>variant_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="1889F8F3-23F7-B1EC-BCFB-8F8A97C4A731" containerWithKeyObject="AE5C8CDB-662C-7BCD-E41A-780E79A1D9B5" localFKIndex="FEDFBC07-EE89-44FA-F523-BAF08EEFA2D6" name="EMPLOYEE_ROLE_ROLE_FK">
+<createdBy>Daniel</createdBy>
+<createdTime>2026-10-04 21:19:02 UTC</createdTime>
+<generatorID>E1A872C7-5791-4467-AAA9-182B3F642A84</generatorID>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<referredTableLongName>ROLE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>C082294A-0239-FD73-1F1C-42F0D137AF96</referredTableID>
+<keyObject>769E60E3-DE70-8CFC-0912-39449066E200</keyObject>
+<referredKeyID>769E60E3-DE70-8CFC-0912-39449066E200</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>role_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

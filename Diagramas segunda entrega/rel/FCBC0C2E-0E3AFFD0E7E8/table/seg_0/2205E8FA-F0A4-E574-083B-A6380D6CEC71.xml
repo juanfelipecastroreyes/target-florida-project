@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2205E8FA-F0A4-E574-083B-A6380D6CEC71" name="RETURN_DETAIL">
+<createdBy>Daniel</createdBy>
+<createdTime>2026-10-04 21:19:02 UTC</createdTime>
+<generatorID>054EF1AC-1447-E126-23CC-0DAC1B4E0983</generatorID>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="quantity" id="E455A91A-7758-61D3-0E54-2F2865E594BC">
+<createdBy>Daniel</createdBy>
+<createdTime>2026-10-04 21:19:02 UTC</createdTime>
+<generatorID>E0918AD3-A65B-11B6-B689-DE2B6E8CAA21</generatorID>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="quantity &gt; 0" />
+</checkConstraint>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RETURN_return_id" id="30590449-1B1B-27D6-8E36-B5745C705B19">
+<createdBy>Daniel</createdBy>
+<createdTime>2026-10-04 21:19:02 UTC</createdTime>
+<generatorID>2CCCA670-164B-7D6C-5C86-B81E6906E001</generatorID>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AE3959EB-4E7D-9E14-3D97-10A4D298D1B9" referredColumn="55354F48-9791-BFED-637D-499AE465EDEC" />
+</associations>
+</Column>
+<Column name="VARIANT_variant_id" id="FE51383E-AC0D-7C1E-25CD-E6F602C23856">
+<createdBy>Daniel</createdBy>
+<createdTime>2026-10-04 21:19:02 UTC</createdTime>
+<generatorID>F252218C-BF82-8622-FAA4-FD8D68EFDAA3</generatorID>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6B0D3E06-AB0E-E6F0-9C63-2DDCC0D65ECE" referredColumn="3D5B9FA5-E242-0B2A-3E3A-2021C82CCB2A" />
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4457FABD-845A-5F15-D502-00D07D4D873F" name="RETURN_DETAIL_PK">
+<createdBy>Daniel</createdBy>
+<createdTime>2026-10-04 21:19:02 UTC</createdTime>
+<generatorID>D493416C-ABE6-1E9F-6FC3-E6BE72E647DC</generatorID>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="30590449-1B1B-27D6-8E36-B5745C705B19" />
+<colUsage columnID="FE51383E-AC0D-7C1E-25CD-E6F602C23856" />
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7835D9C1-4F7E-F687-531E-03395AF0A0D5" name="RETURN_DETAIL_RETURN_FK">
+<createdBy>Daniel</createdBy>
+<createdTime>2026-10-04 21:19:02 UTC</createdTime>
+<generatorID>19085B57-A7D8-8E2C-A732-1C74D2A1DEEF</generatorID>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="30590449-1B1B-27D6-8E36-B5745C705B19" />
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="53D2ABFE-C742-58B7-1DB9-5A87962B07C5" name="RETURN_DETAIL_VARIANT_FK">
+<createdBy>Daniel</createdBy>
+<createdTime>2026-10-04 21:19:02 UTC</createdTime>
+<generatorID>DCE49F26-F4B2-316B-7E92-4B7127FF4756</generatorID>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FE51383E-AC0D-7C1E-25CD-E6F602C23856" />
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

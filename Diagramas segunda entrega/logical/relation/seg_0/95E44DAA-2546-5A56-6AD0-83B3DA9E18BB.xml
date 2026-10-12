@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="LAYAWAY_SALE" directorySegmentName="seg_0" id="95E44DAA-2546-5A56-6AD0-83B3DA9E18BB">
+<createdBy>danie</createdBy>
+<createdTime>2026-10-04 00:54:53 UTC</createdTime>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<engineerTo>
+<item key="FCBC0C2E-3F4E-FC4F-9B6C-0E3AFFD0E7E8" value="true" />
+</engineerTo>
+<sourcePk>B5A767E1-5ED6-F66F-AFF8-EC7AFB2ED809</sourcePk>
+<targetPk>259FC2FD-F393-4A49-9608-E25C6EC93538</targetPk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>029827D3-1864-EA20-C32A-0333379A37E3</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>416E640A-31E1-35CF-8063-E8B0C8B72E7C</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

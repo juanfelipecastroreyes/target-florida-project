@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<relationalModel class="oracle.dbtools.crest.model.design.relational.RelationalDesign" name="Relational_1" id="FCBC0C2E-3F4E-FC4F-9B6C-0E3AFFD0E7E8" mainViewID="03601671-EF47-8ED6-C5CC-1DF007BEAB0F">
+<createdBy>danie</createdBy>
+<createdTime>2026-10-03 23:02:43 UTC</createdTime>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+<selectedRDBMSSite>32076570-2523-435C-2E92-BF29817DFF70</selectedRDBMSSite>
+</relationalModel>

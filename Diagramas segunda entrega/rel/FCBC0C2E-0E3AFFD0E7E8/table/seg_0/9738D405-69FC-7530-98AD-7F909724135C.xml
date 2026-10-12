@@ -1,0 +1,80 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9738D405-69FC-7530-98AD-7F909724135C" name="EMPLOYEE">
+<createdBy>Daniel</createdBy>
+<createdTime>2026-10-04 21:19:02 UTC</createdTime>
+<generatorID>4F9F98A0-2D8E-DE15-C8FC-9F12943EDEC6</generatorID>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="C50E7CA7-95D4-300C-3D24-12EFBAA7B014">
+<createdBy>Daniel</createdBy>
+<createdTime>2026-10-04 21:19:02 UTC</createdTime>
+<generatorID>41D67F5D-4C68-1EF2-212E-36E1BBAF46B2</generatorID>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7321ACF1-AFD8-7E2A-F8DD-6DAFFD937DAF" referredColumn="6E031B57-AC96-4BBB-ED49-975007E63F58" />
+</associations>
+</Column>
+<Column name="hire_date" id="456F60B5-1D0E-7443-74C6-6D808B267FF8">
+<createdBy>Daniel</createdBy>
+<createdTime>2026-10-04 21:19:02 UTC</createdTime>
+<generatorID>70EC7038-E03A-F77C-2ABC-3BB2B5CF301D</generatorID>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="is_active" id="4FDEF03A-A460-5CC6-1F74-FED2892708CD">
+<createdBy>Daniel</createdBy>
+<createdTime>2026-10-04 21:19:02 UTC</createdTime>
+<generatorID>8DBD6AD3-6B17-C70F-97D1-6B690FF8C6F6</generatorID>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<listOfValues>
+<valueDef value="Y" description="" />
+<valueDef value="N" description="" />
+</listOfValues>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E5C42CE4-4816-54EE-BC4A-5726F3DE9ACE" name="EMPLOYEE_PK">
+<createdBy>Daniel</createdBy>
+<createdTime>2026-10-04 21:19:02 UTC</createdTime>
+<generatorID>E1AD7740-4306-464D-64BF-9173A4CF4D3F</generatorID>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C50E7CA7-95D4-300C-3D24-12EFBAA7B014" />
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A7672AD3-DC5B-5455-CD30-D2C1B52A8110" name="EMPLOYEE_PERSON_FK">
+<createdBy>Daniel</createdBy>
+<createdTime>2026-10-04 21:19:02 UTC</createdTime>
+<generatorID>B07328AB-BEF7-C73D-5123-E1FC7DE4749D</generatorID>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C50E7CA7-95D4-300C-3D24-12EFBAA7B014" />
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

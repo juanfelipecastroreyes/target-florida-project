@@ -1,0 +1,13 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKArc class="oracle.dbtools.crest.model.design.relational.FKArc" directorySegmentName="seg_0" id="FF1B6578-8A35-4AE4-9FA6-8E48BB234406" name="PAYMENT_ARC">
+<createdBy>JuanFelipe</createdBy>
+<createdTime>2026-10-11 20:30:00 UTC</createdTime>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<mandatory>true</mandatory>
+<reverseArc>false</reverseArc>
+<table>2B738AE0-56BF-B69C-90D7-161E60224861</table>
+<fkeys>
+<fkeyID>3E5AA86C-63C6-4A26-99A8-96FC51628A45</fkeyID>
+<fkeyID>18B7A48D-C651-45FD-BF41-8BA8057017B7</fkeyID>
+</fkeys>
+</FKArc>

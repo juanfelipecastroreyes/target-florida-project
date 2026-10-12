@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="18B7A48D-C651-45FD-BF41-8BA8057017B7" containerWithKeyObject="2B738AE0-56BF-B69C-90D7-161E60224861" localFKIndex="27F548B1-2501-4A0C-86DC-FABEE967CD04" name="PAYMENT_LAYAWAY_FK">
+<createdBy>JuanFelipe</createdBy>
+<createdTime>2026-10-11 20:30:00 UTC</createdTime>
+<generatorID>B329F92A-7B1F-4176-B7FF-27C993B54754</generatorID>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<referredTableLongName>LAYAWAY</referredTableLongName>
+<arc>FF1B6578-8A35-4AE4-9FA6-8E48BB234406</arc>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>DEF3BD40-23E5-9E64-BFCE-5351C56595CB</referredTableID>
+<keyObject>4F069C79-ED2D-DCEF-EF30-F978DC79F6C4</keyObject>
+<referredKeyID>4F069C79-ED2D-DCEF-EF30-F978DC79F6C4</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>layaway_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

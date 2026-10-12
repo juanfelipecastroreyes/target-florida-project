@@ -1,0 +1,135 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DEF3BD40-23E5-9E64-BFCE-5351C56595CB" name="LAYAWAY">
+<createdBy>Daniel</createdBy>
+<createdTime>2026-10-04 21:19:02 UTC</createdTime>
+<generatorID>029827D3-1864-EA20-C32A-0333379A37E3</generatorID>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="layaway_id" id="95610F9D-B39B-49CD-A567-51EEF3CDD5FD">
+<createdBy>Daniel</createdBy>
+<createdTime>2026-10-04 21:19:02 UTC</createdTime>
+<generatorID>472A9A10-D9BA-AB26-A276-0F6713BCDED5</generatorID>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="created_date" id="817B34AA-4187-0E76-324D-2F8C8E5F3C41">
+<createdBy>Daniel</createdBy>
+<createdTime>2026-10-04 21:19:02 UTC</createdTime>
+<generatorID>46886AD4-2B45-9EB4-AD32-D7C5044BF2E2</generatorID>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="due_date" id="975154A6-0ED4-3457-B528-E4D2505E565B">
+<createdBy>Daniel</createdBy>
+<createdTime>2026-10-04 21:19:02 UTC</createdTime>
+<generatorID>161C1503-8AA9-F69C-ED53-DFE456A98AF0</generatorID>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="status" id="5A973447-E1C0-1F63-150F-9D15D407AEAC">
+<createdBy>Daniel</createdBy>
+<createdTime>2026-10-04 21:19:02 UTC</createdTime>
+<generatorID>02051B2C-E6BC-2154-0CA6-DE9F5996D8AC</generatorID>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<listOfValues>
+<valueDef value="VIGENTE" description="" />
+<valueDef value="COMPLETADO" description="" />
+<valueDef value="VENCIDO" description="" />
+<valueDef value="CANCELADO" description="" />
+</listOfValues>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CUSTOMER_id" id="0FF45B0F-2BD4-53EA-71B8-C3A6E4959450">
+<createdBy>Daniel</createdBy>
+<createdTime>2026-10-04 21:19:02 UTC</createdTime>
+<generatorID>1B59A6F2-7917-FE9D-925E-04F7C2422E34</generatorID>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AB76A731-07EB-6617-5732-CAB001CFC6C1" referredColumn="5C62E268-9016-D3BB-C88C-9059594DCFB5" />
+</associations>
+</Column>
+<Column name="EMPLOYEE_id" id="B32B2318-EC55-7812-EE9D-49AED2E53B94">
+<createdBy>Daniel</createdBy>
+<createdTime>2026-10-04 21:19:02 UTC</createdTime>
+<generatorID>62C98D7F-E281-13E7-BD93-92D0B4DFD3DB</generatorID>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7E834F81-F598-5791-E8A6-C266C254F2D5" referredColumn="C50E7CA7-95D4-300C-3D24-12EFBAA7B014" />
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4F069C79-ED2D-DCEF-EF30-F978DC79F6C4" name="LAYAWAY_PK">
+<createdBy>Daniel</createdBy>
+<createdTime>2026-10-04 21:19:02 UTC</createdTime>
+<generatorID>B5A767E1-5ED6-F66F-AFF8-EC7AFB2ED809</generatorID>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="95610F9D-B39B-49CD-A567-51EEF3CDD5FD" />
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CED836C9-B2F4-C41C-4074-A96BE38F45EA" name="LAYAWAY_CUSTOMER_FK">
+<createdBy>Daniel</createdBy>
+<createdTime>2026-10-04 21:19:02 UTC</createdTime>
+<generatorID>2CAA894B-533D-7FDA-B290-338761E9A825</generatorID>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0FF45B0F-2BD4-53EA-71B8-C3A6E4959450" />
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EEA3C416-DC09-B824-0938-F8F184F146A9" name="LAYAWAY_EMPLOYEE_FK">
+<createdBy>Daniel</createdBy>
+<createdTime>2026-10-04 21:19:02 UTC</createdTime>
+<generatorID>40C99558-5517-2F96-16A6-293A127997DA</generatorID>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B32B2318-EC55-7812-EE9D-49AED2E53B94" />
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="45338B10-7511-BD53-06F6-D604B9A19F4B" containerWithKeyObject="DB37405F-ADAE-81FF-31EB-2F6E8BED72DA" localFKIndex="5D6AC271-47C1-1488-C79C-E9A3900BD97F" name="BATCH_DETAIL_VARIANT_FK">
+<createdBy>Daniel</createdBy>
+<createdTime>2026-10-04 21:19:02 UTC</createdTime>
+<generatorID>1E91AA10-82BA-9EE6-919D-E5E056C4A4B0</generatorID>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<referredTableLongName>VARIANT</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>37CD6938-27D3-DFA5-B796-0CBC0B44C6FA</referredTableID>
+<keyObject>9491AC53-B86A-7930-F04F-A248F64B08E2</keyObject>
+<referredKeyID>9491AC53-B86A-7930-F04F-A248F64B08E2</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>variant_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

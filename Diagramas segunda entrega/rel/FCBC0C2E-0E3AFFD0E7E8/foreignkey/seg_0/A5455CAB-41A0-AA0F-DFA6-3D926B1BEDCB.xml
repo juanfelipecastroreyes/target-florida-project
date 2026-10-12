@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="A5455CAB-41A0-AA0F-DFA6-3D926B1BEDCB" containerWithKeyObject="4169FBDF-F9A3-EB5D-3DBF-DA7A19A18E07" localFKIndex="A1E06ECE-6864-78D7-DDB9-81BB5399A7E3" name="SALE_DETAIL_SALE_FK">
+<createdBy>Daniel</createdBy>
+<createdTime>2026-10-04 21:19:02 UTC</createdTime>
+<generatorID>19DEACDE-92DF-F868-8737-BB0F3284EB8D</generatorID>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<referredTableLongName>SALE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>C010B5A4-1C84-8B6F-4C10-9CA689B29061</referredTableID>
+<keyObject>FF2F78E1-97EF-72DD-7C89-1BCF5DE72EE3</keyObject>
+<referredKeyID>FF2F78E1-97EF-72DD-7C89-1BCF5DE72EE3</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>sale_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

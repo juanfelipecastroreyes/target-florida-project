@@ -1,0 +1,69 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C7E51FC5-D33A-681B-FF05-A13A3E0F32FB" name="CUSTOMER">
+<createdBy>Daniel</createdBy>
+<createdTime>2026-10-04 21:19:02 UTC</createdTime>
+<generatorID>B7468E21-2658-2D8A-C84C-71401808CA4E</generatorID>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="5C62E268-9016-D3BB-C88C-9059594DCFB5">
+<createdBy>Daniel</createdBy>
+<createdTime>2026-10-04 21:19:02 UTC</createdTime>
+<generatorID>41D67F5D-4C68-1EF2-212E-36E1BBAF46B2</generatorID>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5B957B62-7DEB-87E1-EDDD-7B122C4EBF0E" referredColumn="6E031B57-AC96-4BBB-ED49-975007E63F58" />
+</associations>
+</Column>
+<Column name="is_active" id="EF09FFFB-11D4-6061-9D28-9437F41CBDD5">
+<createdBy>Daniel</createdBy>
+<createdTime>2026-10-04 21:19:02 UTC</createdTime>
+<generatorID>62BE1B9A-BA50-F31F-C85C-761AC1853910</generatorID>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<listOfValues>
+<valueDef value="Y" description="" />
+<valueDef value="N" description="" />
+</listOfValues>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="592954D1-9F53-4560-3944-D01D0CE73BC0" name="CUSTOMER_PK">
+<createdBy>Daniel</createdBy>
+<createdTime>2026-10-04 21:19:02 UTC</createdTime>
+<generatorID>E1AD7740-4306-464D-64BF-9173A4CF4D3F</generatorID>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5C62E268-9016-D3BB-C88C-9059594DCFB5" />
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F45D3A9F-A0F4-389F-6B25-E797F824451F" name="CUSTOMER_PERSON_FK">
+<createdBy>Daniel</createdBy>
+<createdTime>2026-10-04 21:19:02 UTC</createdTime>
+<generatorID>0496AD4A-1D28-2898-665C-A72650221669</generatorID>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5C62E268-9016-D3BB-C88C-9059594DCFB5" />
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,183 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="17CD3521-5560-ACF8-F58F-13EEC94FB374" name="PRODUCT">
+<createdBy>Daniel</createdBy>
+<createdTime>2026-10-04 21:19:02 UTC</createdTime>
+<generatorID>BE73090A-ACDD-C7BE-826E-DFB18E11CB03</generatorID>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="product_id" id="4A5ECEDE-99C5-A763-95BD-18EFB7F2AAAD">
+<createdBy>Daniel</createdBy>
+<createdTime>2026-10-04 21:19:02 UTC</createdTime>
+<generatorID>E894D7C3-F907-515F-AAC5-15A238F8B857</generatorID>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="sku" id="FEEFB5E7-4BF0-ACE9-3431-C390741355CA">
+<createdBy>Daniel</createdBy>
+<createdTime>2026-10-04 21:19:02 UTC</createdTime>
+<generatorID>13DF92B2-F42D-0725-D449-5A2550CA1EDC</generatorID>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="473CAD32-6846-F0D1-5A77-D68FCB4D784B">
+<createdBy>Daniel</createdBy>
+<createdTime>2026-10-04 21:19:02 UTC</createdTime>
+<generatorID>86CF646D-2757-58FD-7214-A7F481CEDB07</generatorID>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="is_active" id="DC5E9133-E974-1B1F-9104-12AF45E4EACA">
+<createdBy>Daniel</createdBy>
+<createdTime>2026-10-04 21:19:02 UTC</createdTime>
+<generatorID>69A73767-7CE1-33EB-D691-1F1BD78AD196</generatorID>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<listOfValues>
+<valueDef value="Y" description="" />
+<valueDef value="N" description="" />
+</listOfValues>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="updated_at" id="66C15F1A-5843-487C-8178-59EA229922B5">
+<createdBy>Daniel</createdBy>
+<createdTime>2026-10-04 21:19:02 UTC</createdTime>
+<generatorID>D704B4D9-83A8-5459-BA63-C3BA5A7AE68D</generatorID>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CATEGORY_category_id" id="6177D3F0-AE68-1B2C-BC11-48F273DE3BB7">
+<createdBy>Daniel</createdBy>
+<createdTime>2026-10-04 21:19:02 UTC</createdTime>
+<generatorID>6560EA45-B87E-82FE-C9E3-6867C2ADF080</generatorID>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="97EFC038-5412-ADDD-60B2-C210D4421E2D" referredColumn="3DC31111-78CE-5EBE-CC9B-7A06018FFC6B" />
+</associations>
+</Column>
+<Column name="BRAND_brand_id" id="EAB29E24-E271-D9A8-D090-7C322B9D36DF">
+<createdBy>Daniel</createdBy>
+<createdTime>2026-10-04 21:19:02 UTC</createdTime>
+<generatorID>D831D2A8-E7E1-3E54-119A-A3E20561D855</generatorID>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7D634FE3-998A-E191-7831-315511DA6D9F" referredColumn="6FED50FF-A1F2-7EB9-967C-125E155ACD71" />
+</associations>
+</Column>
+<Column name="EMPLOYEE_id" id="84AA92E1-D60C-E6C6-FF3A-F1BC09C68C2C">
+<createdBy>Daniel</createdBy>
+<createdTime>2026-10-04 21:19:02 UTC</createdTime>
+<generatorID>473D7C7A-A2D3-5ACF-169A-83B7937F4F3C</generatorID>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="120D55BF-75C7-FE77-7BF2-B653272E71F7" referredColumn="C50E7CA7-95D4-300C-3D24-12EFBAA7B014" />
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DB682B0C-7452-4E7F-C020-4E8514D0B728" name="PRODUCT_PK">
+<createdBy>Daniel</createdBy>
+<createdTime>2026-10-04 21:19:02 UTC</createdTime>
+<generatorID>A6496B76-3B54-412B-8AA1-7E67232AC536</generatorID>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4A5ECEDE-99C5-A763-95BD-18EFB7F2AAAD" />
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9D85B50A-1C59-434D-BFCE-465C8A1798E5" name="PRODUCT_SKU_UN">
+<createdBy>JuanFelipe</createdBy>
+<createdTime>2026-10-11 21:00:00 UTC</createdTime>
+<generatorID>9B18F217-B7C2-49B1-B235-61FE327C40B7</generatorID>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FEEFB5E7-4BF0-ACE9-3431-C390741355CA" />
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="54EFC185-A711-40D8-162C-5AF05B2AB0AA" name="PRODUCT_CATEGORY_FK">
+<createdBy>Daniel</createdBy>
+<createdTime>2026-10-04 21:19:02 UTC</createdTime>
+<generatorID>21E00186-839B-951F-54BF-0D1FBFABA599</generatorID>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6177D3F0-AE68-1B2C-BC11-48F273DE3BB7" />
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D66951EA-00B4-4628-A8C8-841474E1E92F" name="PRODUCT_BRAND_FK">
+<createdBy>Daniel</createdBy>
+<createdTime>2026-10-04 21:19:02 UTC</createdTime>
+<generatorID>3A112BF7-D182-1FAF-C126-FC99BFB8881D</generatorID>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EAB29E24-E271-D9A8-D090-7C322B9D36DF" />
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4687BC74-3F2E-2127-18E7-00FE49BDDEF9" name="PRODUCT_EMPLOYEE_FK">
+<createdBy>Daniel</createdBy>
+<createdTime>2026-10-04 21:19:02 UTC</createdTime>
+<generatorID>11ED5469-B73E-12A2-08FC-E58CD101372A</generatorID>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="84AA92E1-D60C-E6C6-FF3A-F1BC09C68C2C" />
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,114 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DB37405F-ADAE-81FF-31EB-2F6E8BED72DA" name="BATCH_DETAIL">
+<createdBy>Daniel</createdBy>
+<createdTime>2026-10-04 21:19:02 UTC</createdTime>
+<generatorID>B20F73C7-8F31-BE01-7F43-1760CD8C1227</generatorID>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="quantity" id="13D03978-A915-05FE-3260-F305123F9734">
+<createdBy>Daniel</createdBy>
+<createdTime>2026-10-04 21:19:02 UTC</createdTime>
+<generatorID>E228E3A1-E4BC-9A6A-9454-940879B1631F</generatorID>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="quantity &gt; 0" />
+</checkConstraint>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="unit_cost" id="E98A8E15-D0E0-C73A-2FC2-C6FA2DAC3588">
+<createdBy>Daniel</createdBy>
+<createdTime>2026-10-04 21:19:02 UTC</createdTime>
+<generatorID>406B073B-5FDB-1CE0-017D-0A8045E336F1</generatorID>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="unit_cost &gt; 0" />
+</checkConstraint>
+<ownDataTypeParameters>,12,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BATCH_id" id="02BE6AF3-CEBC-7DA3-80E8-9EB6C915131C">
+<createdBy>Daniel</createdBy>
+<createdTime>2026-10-04 21:19:02 UTC</createdTime>
+<generatorID>45F8C504-F3C7-EC6D-FCBD-271F72E73A3A</generatorID>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CC8B3434-4B06-7D61-0245-57299156EC84" referredColumn="3D04507C-DBBA-6FCE-723A-D790551B0384" />
+</associations>
+</Column>
+<Column name="VARIANT_variant_id" id="1EAB50C1-6D32-739E-3FD9-DC7D74400FC6">
+<createdBy>Daniel</createdBy>
+<createdTime>2026-10-04 21:19:02 UTC</createdTime>
+<generatorID>F1D044A5-4FE0-7791-5495-A35329B8C375</generatorID>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="45338B10-7511-BD53-06F6-D604B9A19F4B" referredColumn="3D5B9FA5-E242-0B2A-3E3A-2021C82CCB2A" />
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5802EA41-670C-C76C-A5F0-FC45BEE9B1AD" name="BATCH_DETAIL_PK">
+<createdBy>Daniel</createdBy>
+<createdTime>2026-10-04 22:43:05 UTC</createdTime>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="02BE6AF3-CEBC-7DA3-80E8-9EB6C915131C" />
+<colUsage columnID="1EAB50C1-6D32-739E-3FD9-DC7D74400FC6" />
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5D6AC271-47C1-1488-C79C-E9A3900BD97F" name="BATCH_DETAIL_VARIANT_FK">
+<createdBy>Daniel</createdBy>
+<createdTime>2026-10-04 21:19:02 UTC</createdTime>
+<generatorID>1E91AA10-82BA-9EE6-919D-E5E056C4A4B0</generatorID>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1EAB50C1-6D32-739E-3FD9-DC7D74400FC6" />
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6A0F9AD7-B5A0-EC89-C00E-71A90098C85E" name="BATCH_DETAIL_BATCH_FK">
+<createdBy>Daniel</createdBy>
+<createdTime>2026-10-04 21:19:02 UTC</createdTime>
+<generatorID>8E17FC27-48B6-2760-A718-A7FB0072A318</generatorID>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="02BE6AF3-CEBC-7DA3-80E8-9EB6C915131C" />
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

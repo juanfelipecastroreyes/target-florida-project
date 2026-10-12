@@ -1,0 +1,80 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="054EF1AC-1447-E126-23CC-0DAC1B4E0983" name="RETURN_DETAIL">
+<createdBy>danie</createdBy>
+<createdTime>2026-10-03 23:50:48 UTC</createdTime>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<engineerTo>
+<item key="FCBC0C2E-3F4E-FC4F-9B6C-0E3AFFD0E7E8" value="true" />
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="quantity" id="E0918AD3-A65B-11B6-B689-DE2B6E8CAA21">
+<createdBy>danie</createdBy>
+<createdTime>2026-10-03 23:50:52 UTC</createdTime>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<engineerTo>
+<item key="FCBC0C2E-3F4E-FC4F-9B6C-0E3AFFD0E7E8" value="true" />
+</engineerTo>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="quantity &gt; 0" />
+</checkConstraint>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+</Attribute>
+<Attribute name="RETURN_return_id" id="2CCCA670-164B-7D6C-5C86-B81E6906E001">
+<createdBy>Daniel</createdBy>
+<createdTime>2026-10-04 20:33:13 UTC</createdTime>
+<generatorID>19085B57-A7D8-8E2C-A732-1C74D2A1DEEF</generatorID>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<engineerTo>
+<item key="FCBC0C2E-3F4E-FC4F-9B6C-0E3AFFD0E7E8" value="true" />
+</engineerTo>
+<referedAttribute>0A6A1304-5DBA-B949-A258-AA9AEC7C8202</referedAttribute>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+</Attribute>
+<Attribute name="VARIANT_variant_id" id="F252218C-BF82-8622-FAA4-FD8D68EFDAA3">
+<createdBy>Daniel</createdBy>
+<createdTime>2026-10-04 20:33:50 UTC</createdTime>
+<generatorID>DCE49F26-F4B2-316B-7E92-4B7127FF4756</generatorID>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<engineerTo>
+<item key="FCBC0C2E-3F4E-FC4F-9B6C-0E3AFFD0E7E8" value="true" />
+</engineerTo>
+<referedAttribute>F213DE6E-40BE-978F-8087-830D2755F95F</referedAttribute>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="D493416C-ABE6-1E9F-6FC3-E6BE72E647DC" name="RETURN_DETAIL PK">
+<createdBy>Daniel</createdBy>
+<createdTime>2026-10-04 20:33:13 UTC</createdTime>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<engineerTo>
+<item key="FCBC0C2E-3F4E-FC4F-9B6C-0E3AFFD0E7E8" value="true" />
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>2CCCA670-164B-7D6C-5C86-B81E6906E001</attributeRef>
+<attributeRef>F252218C-BF82-8622-FAA4-FD8D68EFDAA3</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

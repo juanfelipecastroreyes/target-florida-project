@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="3558C361-7288-D3D6-E1A9-6ADDCE623BC9" containerWithKeyObject="37CD6938-27D3-DFA5-B796-0CBC0B44C6FA" localFKIndex="1036709C-4251-1946-1028-6C463C854840" name="VARIANT_PRODUCT_FK">
+<createdBy>Daniel</createdBy>
+<createdTime>2026-10-04 21:19:02 UTC</createdTime>
+<generatorID>40AB5C20-EC15-BEC4-3A12-3F13A18CBC71</generatorID>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<referredTableLongName>PRODUCT</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>17CD3521-5560-ACF8-F58F-13EEC94FB374</referredTableID>
+<keyObject>DB682B0C-7452-4E7F-C020-4E8514D0B728</keyObject>
+<referredKeyID>DB682B0C-7452-4E7F-C020-4E8514D0B728</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>product_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,114 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4169FBDF-F9A3-EB5D-3DBF-DA7A19A18E07" name="SALE_DETAIL">
+<createdBy>Daniel</createdBy>
+<createdTime>2026-10-04 21:19:02 UTC</createdTime>
+<generatorID>6174CD33-0B32-1E42-0FFB-5EAFE9FAFAB9</generatorID>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="quantity" id="F1CA4574-82E5-2457-BE38-3FD082F817CB">
+<createdBy>Daniel</createdBy>
+<createdTime>2026-10-04 21:19:02 UTC</createdTime>
+<generatorID>668809C0-A989-B424-7476-E31DCFE3968F</generatorID>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="quantity &gt; 0" />
+</checkConstraint>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="applied_price" id="9298B74E-2A1C-7139-BD75-D1E360D26ED5">
+<createdBy>Daniel</createdBy>
+<createdTime>2026-10-04 21:19:02 UTC</createdTime>
+<generatorID>93986548-7817-C023-8953-73E9EBB78699</generatorID>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="applied_price &gt; 0" />
+</checkConstraint>
+<ownDataTypeParameters>,12,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SALE_sale_id" id="E377E528-07ED-F646-60BB-EE21F666B8FF">
+<createdBy>Daniel</createdBy>
+<createdTime>2026-10-04 21:19:02 UTC</createdTime>
+<generatorID>71D2E6FA-D601-3BD7-CA89-A6B6C2B561ED</generatorID>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A5455CAB-41A0-AA0F-DFA6-3D926B1BEDCB" referredColumn="57AB0B31-B50F-E624-2201-F9E095B6E334" />
+</associations>
+</Column>
+<Column name="VARIANT_variant_id" id="99DEBAFC-F308-10AD-87E2-7B4C8396D9BA">
+<createdBy>Daniel</createdBy>
+<createdTime>2026-10-04 21:19:02 UTC</createdTime>
+<generatorID>D02C9788-17EE-8AD5-F6E0-51B184638FAF</generatorID>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AABDA723-3F7A-FD52-5C4D-C2A2217352DD" referredColumn="3D5B9FA5-E242-0B2A-3E3A-2021C82CCB2A" />
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DB1D8277-2B21-D0E7-5492-2B62EDC74E18" name="SALE_DETAIL_PK">
+<createdBy>Daniel</createdBy>
+<createdTime>2026-10-04 22:36:56 UTC</createdTime>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E377E528-07ED-F646-60BB-EE21F666B8FF" />
+<colUsage columnID="99DEBAFC-F308-10AD-87E2-7B4C8396D9BA" />
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A1E06ECE-6864-78D7-DDB9-81BB5399A7E3" name="SALE_DETAIL_SALE_FK">
+<createdBy>Daniel</createdBy>
+<createdTime>2026-10-04 21:19:02 UTC</createdTime>
+<generatorID>19DEACDE-92DF-F868-8737-BB0F3284EB8D</generatorID>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E377E528-07ED-F646-60BB-EE21F666B8FF" />
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B4300E43-A61B-BC7C-57B2-6BD8493F79F8" name="SALE_DETAIL_VARIANT_FK">
+<createdBy>Daniel</createdBy>
+<createdTime>2026-10-04 21:19:02 UTC</createdTime>
+<generatorID>4B67E029-058C-2205-9589-8F19CCC14094</generatorID>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="99DEBAFC-F308-10AD-87E2-7B4C8396D9BA" />
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

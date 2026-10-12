@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="BRAND_PRODUCT" directorySegmentName="seg_0" id="3A112BF7-D182-1FAF-C126-FC99BFB8881D">
+<createdBy>danie</createdBy>
+<createdTime>2026-10-04 00:16:41 UTC</createdTime>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<engineerTo>
+<item key="FCBC0C2E-3F4E-FC4F-9B6C-0E3AFFD0E7E8" value="true" />
+</engineerTo>
+<sourcePk>ACA1FEAE-3375-31DF-7E8B-778325022918</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>180358D4-23FF-FF31-4EC9-07A29874B448</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>BE73090A-ACDD-C7BE-826E-DFB18E11CB03</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

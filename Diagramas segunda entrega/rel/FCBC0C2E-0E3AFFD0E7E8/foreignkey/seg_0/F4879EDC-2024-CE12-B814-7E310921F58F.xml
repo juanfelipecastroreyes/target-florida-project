@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="F4879EDC-2024-CE12-B814-7E310921F58F" containerWithKeyObject="25EC7727-668C-354E-B39B-0DBFE5EAE137" localFKIndex="53B3AF04-5799-3BB1-7F3E-CE20401D98E8" name="INVENTORY_ADJUSTMENT_EMPLOYEE_FK">
+<createdBy>Daniel</createdBy>
+<createdTime>2026-10-04 21:19:02 UTC</createdTime>
+<generatorID>CF59E2B3-D32D-CDFC-6FB9-CD3AC59010EA</generatorID>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<referredTableLongName>EMPLOYEE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>9738D405-69FC-7530-98AD-7F909724135C</referredTableID>
+<keyObject>E5C42CE4-4816-54EE-BC4A-5726F3DE9ACE</keyObject>
+<referredKeyID>E5C42CE4-4816-54EE-BC4A-5726F3DE9ACE</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="CUSTOMER_STORE_CREDIT_MOVEMENT" directorySegmentName="seg_0" id="9BC6DA64-7510-E5EA-F538-105101146597">
+<createdBy>Daniel</createdBy>
+<createdTime>2026-10-04 20:37:16 UTC</createdTime>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<engineerTo>
+<item key="FCBC0C2E-3F4E-FC4F-9B6C-0E3AFFD0E7E8" value="true" />
+</engineerTo>
+<sourcePk>E1AD7740-4306-464D-64BF-9173A4CF4D3F</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>B7468E21-2658-2D8A-C84C-71401808CA4E</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>2FB13C41-059E-A322-F9D6-C3C6AFCABF3C</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

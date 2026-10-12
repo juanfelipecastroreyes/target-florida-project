@@ -1,0 +1,167 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="1B19596E-27AC-8A70-07A2-306EED21ED5B" name="VARIANT">
+<createdBy>danie</createdBy>
+<createdTime>2026-10-03 23:40:49 UTC</createdTime>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<engineerTo>
+<item key="FCBC0C2E-3F4E-FC4F-9B6C-0E3AFFD0E7E8" value="true" />
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="variant_id" id="F213DE6E-40BE-978F-8087-830D2755F95F">
+<createdBy>danie</createdBy>
+<createdTime>2026-10-03 23:40:54 UTC</createdTime>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<engineerTo>
+<item key="FCBC0C2E-3F4E-FC4F-9B6C-0E3AFFD0E7E8" value="true" />
+</engineerTo>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+</Attribute>
+<Attribute name="variant_size" id="F10E2EDB-AF80-9526-D128-F4369E7C6443">
+<createdBy>danie</createdBy>
+<createdTime>2026-10-03 23:40:59 UTC</createdTime>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<engineerTo>
+<item key="FCBC0C2E-3F4E-FC4F-9B6C-0E3AFFD0E7E8" value="true" />
+</engineerTo>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<listOfValues>
+<valueDef value="S" description="" />
+<valueDef value="M" description="" />
+<valueDef value="L" description="" />
+<valueDef value="XL" description="" />
+<valueDef value="XXL" description="" />
+</listOfValues>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="color" id="72AB9E39-707E-3EBB-8F73-F5BBAA673CAD">
+<createdBy>danie</createdBy>
+<createdTime>2026-10-03 23:41:03 UTC</createdTime>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<engineerTo>
+<item key="FCBC0C2E-3F4E-FC4F-9B6C-0E3AFFD0E7E8" value="true" />
+</engineerTo>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="material" id="DCA46C9A-1831-BCF9-FC54-6A3AD1C8C442">
+<createdBy>danie</createdBy>
+<createdTime>2026-10-03 23:41:08 UTC</createdTime>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<engineerTo>
+<item key="FCBC0C2E-3F4E-FC4F-9B6C-0E3AFFD0E7E8" value="true" />
+</engineerTo>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="price" id="9716EAA3-C4B9-056B-3D85-6F053B2638B6">
+<createdBy>danie</createdBy>
+<createdTime>2026-10-03 23:41:12 UTC</createdTime>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<engineerTo>
+<item key="FCBC0C2E-3F4E-FC4F-9B6C-0E3AFFD0E7E8" value="true" />
+</engineerTo>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="price &gt; 0" />
+</checkConstraint>
+<ownDataTypeParameters>,12,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="stock" id="D6BCB9FF-FE49-42F4-EF27-C345436BCE15">
+<createdBy>danie</createdBy>
+<createdTime>2026-10-03 23:41:16 UTC</createdTime>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<engineerTo>
+<item key="FCBC0C2E-3F4E-FC4F-9B6C-0E3AFFD0E7E8" value="true" />
+</engineerTo>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="stock &gt;= 0" />
+</checkConstraint>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+</Attribute>
+<Attribute name="min_stock_threshold" id="8224A6B6-AC44-B8A1-F356-5C84426F7C20">
+<createdBy>danie</createdBy>
+<createdTime>2026-10-03 23:41:22 UTC</createdTime>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<engineerTo>
+<item key="FCBC0C2E-3F4E-FC4F-9B6C-0E3AFFD0E7E8" value="true" />
+</engineerTo>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="min_stock_threshold &gt;= 0" />
+</checkConstraint>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PRODUCT_product_id" id="B50F9CE4-1D3F-A715-ED7F-7447F1C63E2F">
+<createdBy>Daniel</createdBy>
+<createdTime>2026-10-04 20:41:30 UTC</createdTime>
+<generatorID>40AB5C20-EC15-BEC4-3A12-3F13A18CBC71</generatorID>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<engineerTo>
+<item key="FCBC0C2E-3F4E-FC4F-9B6C-0E3AFFD0E7E8" value="true" />
+</engineerTo>
+<referedAttribute>E894D7C3-F907-515F-AAC5-15A238F8B857</referedAttribute>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="FE52A7CE-7E8E-0C63-AFAB-C9727233C2D6" name="VARIANT PK">
+<createdBy>danie</createdBy>
+<createdTime>2026-10-03 23:40:59 UTC</createdTime>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<engineerTo>
+<item key="FCBC0C2E-3F4E-FC4F-9B6C-0E3AFFD0E7E8" value="true" />
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>F213DE6E-40BE-978F-8087-830D2755F95F</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="686D6A58-BE77-4F55-A354-D9A0097B5C2B" name="VARIANT COMBO_UN">
+<createdBy>JuanFelipe</createdBy>
+<createdTime>2026-10-11 21:00:00 UTC</createdTime>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<engineerTo>
+<item key="FCBC0C2E-3F4E-FC4F-9B6C-0E3AFFD0E7E8" value="true" />
+</engineerTo>
+<pk>false</pk>
+<usedAttributes>
+<attributeRef>B50F9CE4-1D3F-A715-ED7F-7447F1C63E2F</attributeRef>
+<attributeRef>F10E2EDB-AF80-9526-D128-F4369E7C6443</attributeRef>
+<attributeRef>72AB9E39-707E-3EBB-8F73-F5BBAA673CAD</attributeRef>
+<attributeRef>DCA46C9A-1831-BCF9-FC54-6A3AD1C8C442</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

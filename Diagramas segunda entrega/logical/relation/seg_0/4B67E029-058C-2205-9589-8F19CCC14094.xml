@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="VARIANT_SALE_DETAIL" directorySegmentName="seg_0" id="4B67E029-058C-2205-9589-8F19CCC14094">
+<createdBy>danie</createdBy>
+<createdTime>2026-10-04 00:35:16 UTC</createdTime>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<engineerTo>
+<item key="FCBC0C2E-3F4E-FC4F-9B6C-0E3AFFD0E7E8" value="true" />
+</engineerTo>
+<sourcePk>FE52A7CE-7E8E-0C63-AFAB-C9727233C2D6</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>1B19596E-27AC-8A70-07A2-306EED21ED5B</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>6174CD33-0B32-1E42-0FFB-5EAFE9FAFAB9</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

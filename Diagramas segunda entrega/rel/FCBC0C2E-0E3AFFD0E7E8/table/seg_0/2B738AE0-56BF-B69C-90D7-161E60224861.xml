@@ -1,0 +1,150 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2B738AE0-56BF-B69C-90D7-161E60224861" name="PAYMENT">
+<createdBy>Daniel</createdBy>
+<createdTime>2026-10-04 21:19:02 UTC</createdTime>
+<generatorID>B478E780-3A59-47AF-5228-D091D188438D</generatorID>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="payment_id" id="6AA06A28-5AFE-309A-408A-32B98DA4D394">
+<createdBy>Daniel</createdBy>
+<createdTime>2026-10-04 21:19:02 UTC</createdTime>
+<generatorID>EE45D0B4-1755-3C7F-058E-E1E7C24D03A2</generatorID>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="amount" id="C34196B1-10E2-DB34-B7EB-9B43E93F407A">
+<createdBy>Daniel</createdBy>
+<createdTime>2026-10-04 21:19:02 UTC</createdTime>
+<generatorID>9F8F9EC7-5809-3C17-7812-E5911F9169E6</generatorID>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="amount &gt; 0" />
+</checkConstraint>
+<ownDataTypeParameters>,12,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="payment_date" id="7235053F-340F-AE71-E316-578844686BB5">
+<createdBy>Daniel</createdBy>
+<createdTime>2026-10-04 21:19:02 UTC</createdTime>
+<generatorID>BF8E16F3-57C4-4880-1205-65B8E3C382D7</generatorID>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PAYMENT_METHOD_id" id="467AF270-016A-A169-0DD5-FB20AF874860">
+<createdBy>Daniel</createdBy>
+<createdTime>2026-10-04 21:19:02 UTC</createdTime>
+<generatorID>B68486CA-4137-70E5-0892-8D4A53FA2CDC</generatorID>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B45B7CCE-79B9-F6A7-075A-93930BB7F4A6" referredColumn="28A9A280-5EF3-BAA4-55BF-15FB2B306444" />
+</associations>
+</Column>
+<Column name="SALE_sale_id" id="23978C46-4440-4094-ACD8-0750B4C85C98">
+<createdBy>JuanFelipe</createdBy>
+<createdTime>2026-10-11 20:30:00 UTC</createdTime>
+<generatorID>BA34E15D-89CF-4552-8D6A-BC4B75225718</generatorID>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3E5AA86C-63C6-4A26-99A8-96FC51628A45" referredColumn="57AB0B31-B50F-E624-2201-F9E095B6E334" />
+</associations>
+</Column>
+<Column name="LAYAWAY_layaway_id" id="B2A32274-5AC8-4773-B208-0F57471CAF0B">
+<createdBy>JuanFelipe</createdBy>
+<createdTime>2026-10-11 20:30:00 UTC</createdTime>
+<generatorID>C7528703-E1DB-4EF3-8037-59B7F5DDB874</generatorID>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="18B7A48D-C651-45FD-BF41-8BA8057017B7" referredColumn="95610F9D-B39B-49CD-A567-51EEF3CDD5FD" />
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1ACDCA11-14D8-6EA5-89E4-AA682326BAA2" name="PAYMENT_PK">
+<createdBy>Daniel</createdBy>
+<createdTime>2026-10-04 21:19:02 UTC</createdTime>
+<generatorID>62813FE6-BD21-2A59-527B-2868057680BD</generatorID>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6AA06A28-5AFE-309A-408A-32B98DA4D394" />
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6B55D284-D206-4960-3E3E-F46AC2CBC9D1" name="PAYMENT_PAYMENT_METHOD_FK">
+<createdBy>Daniel</createdBy>
+<createdTime>2026-10-04 21:19:02 UTC</createdTime>
+<generatorID>F9262A70-2BB3-58A2-CF8E-0C4BE22134A2</generatorID>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="467AF270-016A-A169-0DD5-FB20AF874860" />
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="611EC80F-3AD2-4140-9D11-7F7B56BC0745" name="PAYMENT_SALE_FK">
+<createdBy>JuanFelipe</createdBy>
+<createdTime>2026-10-11 20:30:00 UTC</createdTime>
+<generatorID>6DF33641-F990-458B-A175-259FF7ADA1F5</generatorID>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="23978C46-4440-4094-ACD8-0750B4C85C98" />
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="27F548B1-2501-4A0C-86DC-FABEE967CD04" name="PAYMENT_LAYAWAY_FK">
+<createdBy>JuanFelipe</createdBy>
+<createdTime>2026-10-11 20:30:00 UTC</createdTime>
+<generatorID>B329F92A-7B1F-4176-B7FF-27C993B54754</generatorID>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B2A32274-5AC8-4773-B208-0F57471CAF0B" />
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

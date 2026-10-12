@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="EMPLOYEE_ROLE" directorySegmentName="seg_0" id="E1A872C7-5791-4467-AAA9-182B3F642A84">
+<createdBy>JuanFelipe</createdBy>
+<createdTime>2026-10-11 21:50:00 UTC</createdTime>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<engineerTo>
+<item key="FCBC0C2E-3F4E-FC4F-9B6C-0E3AFFD0E7E8" value="true" />
+</engineerTo>
+<sourcePk>E1AD7740-4306-464D-64BF-9173A4CF4D3F</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>desempeña</nameOnSource>
+<nameOnTarget>es desempeñado por</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>4F9F98A0-2D8E-DE15-C8FC-9F12943EDEC6</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>18773449-0990-9DC0-BB70-B7E53A9A9F66</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

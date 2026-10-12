@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="FE8AC663-2013-4E1C-828E-9A74151973D1" containerWithKeyObject="960E6F84-2AFC-26AC-2793-6BF48E4909E7" localFKIndex="32D7AF10-D2C0-4463-BDF2-0930EB53BAD2" name="STORE_CREDIT_MOVEMENT_PAYMENT_FK">
+<createdBy>JuanFelipe</createdBy>
+<createdTime>2026-10-11 21:00:00 UTC</createdTime>
+<generatorID>18A4FDC0-B5A4-4E93-A20C-426938FAEDE6</generatorID>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<referredTableLongName>PAYMENT</referredTableLongName>
+<arc>752C3064-10F5-48F0-AA15-2E925ED7C8DE</arc>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>2B738AE0-56BF-B69C-90D7-161E60224861</referredTableID>
+<keyObject>1ACDCA11-14D8-6EA5-89E4-AA682326BAA2</keyObject>
+<referredKeyID>1ACDCA11-14D8-6EA5-89E4-AA682326BAA2</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>payment_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

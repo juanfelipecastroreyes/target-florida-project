@@ -1,0 +1,78 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AE5C8CDB-662C-7BCD-E41A-780E79A1D9B5" name="EMPLOYEE_ROLE">
+<createdBy>Daniel</createdBy>
+<createdTime>2026-10-04 21:19:02 UTC</createdTime>
+<generatorID>E1A872C7-5791-4467-AAA9-182B3F642A84</generatorID>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="EMPLOYEE_id" id="D471877A-5591-1192-3E64-51E273D87C9E">
+<createdBy>Daniel</createdBy>
+<createdTime>2026-10-04 21:19:02 UTC</createdTime>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5EE81BD3-B790-576D-D66B-EF426D5D3858" referredColumn="C50E7CA7-95D4-300C-3D24-12EFBAA7B014" />
+</associations>
+</Column>
+<Column name="ROLE_role_id" id="7571AAA3-65A8-C6F8-FACC-FB3AB18459E6">
+<createdBy>Daniel</createdBy>
+<createdTime>2026-10-04 21:19:02 UTC</createdTime>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1889F8F3-23F7-B1EC-BCFB-8F8A97C4A731" referredColumn="047E1E82-878C-91A4-000A-FD8F31F53709" />
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7B8C7808-3914-4F6C-AE3F-CD24B0BD48B1" name="EMPLOYEE_ROLE_PK">
+<createdBy>JuanFelipe</createdBy>
+<createdTime>2026-10-11 20:30:00 UTC</createdTime>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D471877A-5591-1192-3E64-51E273D87C9E" />
+<colUsage columnID="7571AAA3-65A8-C6F8-FACC-FB3AB18459E6" />
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="08B55F14-4710-8428-9910-28A9414D730C" name="EMPLOYEE_ROLE_EMPLOYEE_FK">
+<createdBy>Daniel</createdBy>
+<createdTime>2026-10-04 21:19:02 UTC</createdTime>
+<generatorID>E1A872C7-5791-4467-AAA9-182B3F642A84</generatorID>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D471877A-5591-1192-3E64-51E273D87C9E" />
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FEDFBC07-EE89-44FA-F523-BAF08EEFA2D6" name="EMPLOYEE_ROLE_ROLE_FK">
+<createdBy>Daniel</createdBy>
+<createdTime>2026-10-04 21:19:02 UTC</createdTime>
+<generatorID>E1A872C7-5791-4467-AAA9-182B3F642A84</generatorID>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7571AAA3-65A8-C6F8-FACC-FB3AB18459E6" />
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="AE3959EB-4E7D-9E14-3D97-10A4D298D1B9" containerWithKeyObject="2205E8FA-F0A4-E574-083B-A6380D6CEC71" localFKIndex="7835D9C1-4F7E-F687-531E-03395AF0A0D5" name="RETURN_DETAIL_RETURN_FK">
+<createdBy>Daniel</createdBy>
+<createdTime>2026-10-04 21:19:02 UTC</createdTime>
+<generatorID>19085B57-A7D8-8E2C-A732-1C74D2A1DEEF</generatorID>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<referredTableLongName>RETURN</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>738828D7-9695-15C6-0E0E-406F432D12E6</referredTableID>
+<keyObject>07D1C4C1-D95A-9502-C106-CF3CD7173ED7</keyObject>
+<referredKeyID>07D1C4C1-D95A-9502-C106-CF3CD7173ED7</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>return_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="B45B7CCE-79B9-F6A7-075A-93930BB7F4A6" containerWithKeyObject="2B738AE0-56BF-B69C-90D7-161E60224861" localFKIndex="6B55D284-D206-4960-3E3E-F46AC2CBC9D1" name="PAYMENT_PAYMENT_METHOD_FK">
+<createdBy>Daniel</createdBy>
+<createdTime>2026-10-04 21:19:02 UTC</createdTime>
+<generatorID>F9262A70-2BB3-58A2-CF8E-0C4BE22134A2</generatorID>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<referredTableLongName>PAYMENT_METHOD</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>1BEB8362-39DF-40BF-087B-950EEFF8C05E</referredTableID>
+<keyObject>415AD1BF-70FE-AFB1-50BF-BA5581F2BD2B</keyObject>
+<referredKeyID>415AD1BF-70FE-AFB1-50BF-BA5581F2BD2B</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

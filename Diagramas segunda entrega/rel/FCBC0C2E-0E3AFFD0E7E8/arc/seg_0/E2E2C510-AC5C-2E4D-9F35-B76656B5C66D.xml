@@ -1,0 +1,13 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKArc class="oracle.dbtools.crest.model.design.relational.FKArc" directorySegmentName="seg_0" id="E2E2C510-AC5C-2E4D-9F35-B76656B5C66D" name="FKArc_1">
+<createdBy>Daniel</createdBy>
+<createdTime>2026-10-04 21:19:02 UTC</createdTime>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<mandatory>false</mandatory>
+<reverseArc>true</reverseArc>
+<table>D0CDB605-BF2E-813C-972B-8EF082EA99D3</table>
+<fkeys>
+<fkeyID>5B957B62-7DEB-87E1-EDDD-7B122C4EBF0E</fkeyID>
+<fkeyID>7321ACF1-AFD8-7E2A-F8DD-6DAFFD937DAF</fkeyID>
+</fkeys>
+</FKArc>

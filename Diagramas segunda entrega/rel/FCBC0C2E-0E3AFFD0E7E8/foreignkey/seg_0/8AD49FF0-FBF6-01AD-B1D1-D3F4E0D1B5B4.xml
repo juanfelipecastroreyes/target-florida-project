@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="8AD49FF0-FBF6-01AD-B1D1-D3F4E0D1B5B4" containerWithKeyObject="701A97A1-FC41-BAF9-6F7C-D0DE66F68419" localFKIndex="73A1EB58-3EFD-E66F-1DF6-27B107CE2A2F" name="PROMOTION_VARIANT_PROMOTION_FK">
+<createdBy>Daniel</createdBy>
+<createdTime>2026-10-04 21:19:02 UTC</createdTime>
+<generatorID>627A64F1-CFE2-47D6-B050-22247C34DCB3</generatorID>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<referredTableLongName>PROMOTION</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>A9803950-5E8D-4E72-B2BE-309CF0180543</referredTableID>
+<keyObject>F051941B-5E57-B31B-5864-096E521CE1FD</keyObject>
+<referredKeyID>F051941B-5E57-B31B-5864-096E521CE1FD</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>promotion_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,116 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="029827D3-1864-EA20-C32A-0333379A37E3" name="LAYAWAY">
+<createdBy>danie</createdBy>
+<createdTime>2026-10-03 23:47:16 UTC</createdTime>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<engineerTo>
+<item key="FCBC0C2E-3F4E-FC4F-9B6C-0E3AFFD0E7E8" value="true" />
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="layaway_id" id="472A9A10-D9BA-AB26-A276-0F6713BCDED5">
+<createdBy>danie</createdBy>
+<createdTime>2026-10-03 23:47:21 UTC</createdTime>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<engineerTo>
+<item key="FCBC0C2E-3F4E-FC4F-9B6C-0E3AFFD0E7E8" value="true" />
+</engineerTo>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+</Attribute>
+<Attribute name="created_date" id="46886AD4-2B45-9EB4-AD32-D7C5044BF2E2">
+<createdBy>danie</createdBy>
+<createdTime>2026-10-03 23:47:30 UTC</createdTime>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<engineerTo>
+<item key="FCBC0C2E-3F4E-FC4F-9B6C-0E3AFFD0E7E8" value="true" />
+</engineerTo>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="due_date" id="161C1503-8AA9-F69C-ED53-DFE456A98AF0">
+<createdBy>danie</createdBy>
+<createdTime>2026-10-03 23:47:35 UTC</createdTime>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<engineerTo>
+<item key="FCBC0C2E-3F4E-FC4F-9B6C-0E3AFFD0E7E8" value="true" />
+</engineerTo>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="status" id="02051B2C-E6BC-2154-0CA6-DE9F5996D8AC">
+<createdBy>danie</createdBy>
+<createdTime>2026-10-03 23:47:40 UTC</createdTime>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<engineerTo>
+<item key="FCBC0C2E-3F4E-FC4F-9B6C-0E3AFFD0E7E8" value="true" />
+</engineerTo>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<listOfValues>
+<valueDef value="VIGENTE" description="" />
+<valueDef value="COMPLETADO" description="" />
+<valueDef value="VENCIDO" description="" />
+<valueDef value="CANCELADO" description="" />
+</listOfValues>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CUSTOMER_id" id="1B59A6F2-7917-FE9D-925E-04F7C2422E34">
+<createdBy>danie</createdBy>
+<createdTime>2026-10-04 00:53:03 UTC</createdTime>
+<generatorID>2CAA894B-533D-7FDA-B290-338761E9A825</generatorID>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<engineerTo>
+<item key="FCBC0C2E-3F4E-FC4F-9B6C-0E3AFFD0E7E8" value="true" />
+</engineerTo>
+<referedAttribute>41D67F5D-4C68-1EF2-212E-36E1BBAF46B2</referedAttribute>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+</Attribute>
+<Attribute name="EMPLOYEE_id" id="62C98D7F-E281-13E7-BD93-92D0B4DFD3DB">
+<createdBy>danie</createdBy>
+<createdTime>2026-10-04 00:53:24 UTC</createdTime>
+<generatorID>40C99558-5517-2F96-16A6-293A127997DA</generatorID>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<engineerTo>
+<item key="FCBC0C2E-3F4E-FC4F-9B6C-0E3AFFD0E7E8" value="true" />
+</engineerTo>
+<referedAttribute>41D67F5D-4C68-1EF2-212E-36E1BBAF46B2</referedAttribute>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="B5A767E1-5ED6-F66F-AFF8-EC7AFB2ED809" name="LAYAWAY PK">
+<createdBy>danie</createdBy>
+<createdTime>2026-10-03 23:47:30 UTC</createdTime>
+<ownerDesignName>Diagramas segunda entrega</ownerDesignName>
+<engineerTo>
+<item key="FCBC0C2E-3F4E-FC4F-9B6C-0E3AFFD0E7E8" value="true" />
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>472A9A10-D9BA-AB26-A276-0F6713BCDED5</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
