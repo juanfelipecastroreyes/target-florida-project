@@ -1,42 +1,92 @@
-# Sistema de Gestión de Inventario Target Florida
+# Target Florida: Sistema de Gestión de Inventario, Proveedores y Ventas
 
-**Autores:** Jose Daniel Cordoba Cabal — A00407856  
-Daniel Montenegro — A00409572  
-Sebastian Mejia — A00410557  
-Juan Felipe Castro — A00410561  
-Santiago Sierra Vasquez — A00410695
+**Proyecto de curso — Sistemas Intensivos en Datos**  
+Universidad Icesi · Facultad Barberi de Ingeniería, Diseño y Ciencias Aplicadas · Ingeniería de Sistemas
 
-Universidad Icesi  
-Facultad Barberi de ingeniería diseño y ciencias aplicadas  
-Ingeniería de Sistemas  
-Sistemas intensivos de datos  
-Monica Maria Rojas Rincon  
-Agosto 3 de 2026 — actualizado para la Entrega 2 (octubre de 2026)
+---
 
-## Contenido del repositorio
+## Información general
+
+| Campo | Detalle |
+|:---|:---|
+| **Curso** | Sistemas Intensivos en Datos |
+| **Docente** | Mónica María Rojas Rincón |
+| **Periodo académico** | 2026-2 |
+| **Motor de base de datos** | Oracle Database |
+| **Herramienta de modelado** | Oracle SQL Developer Data Modeler (notación Barker) |
+| **Fecha de inicio** | 3 de agosto de 2026 |
+| **Última actualización** | Noviembre de 2026 — Entrega 3 |
+
+## Integrantes
+
+| Nombre | Código |
+|:---|:---:|
+| José Daniel Córdoba Cabal | A00407856 |
+| Daniel Montenegro Gil| A00409572 |
+| Sebastián Mejía Trujillo | A00410557 |
+| Juan Felipe Castro Reyes | A00410561 |
+| Santiago Sierra Vásquez | A00410695 |
+
+---
+
+## Tabla de contenido
+
+1. [Estructura del repositorio](#1-estructura-del-repositorio)
+2. [Caso de estudio](#2-caso-de-estudio)
+3. [Historias de usuario](#3-historias-de-usuario)
+4. [Reglas de negocio](#4-reglas-de-negocio)
+5. [Acuerdos del equipo](#5-acuerdos-del-equipo)
+6. [Modelo Entidad-Asociación (MER)](#6-modelo-entidad-asociación-mer)
+7. [Modelo relacional normalizado (3FN)](#7-modelo-relacional-normalizado-3fn)
+8. [Implementación](#8-implementación)
+9. [Cómo ejecutar los scripts](#9-cómo-ejecutar-los-scripts)
+
+---
+
+## 1. Estructura del repositorio
+
+```
+target-florida-project/
+├── README.md
+├── doc/                  Documentación: requerimientos, normalización, bitácoras y actas
+│   ├── bitacoras/
+│   └── reuniones/
+├── model/                Diagramas (PDF) y fuentes de Data Modeler (.zip)
+└── src/                  Scripts SQL: DDL, DML, DQL y PL/SQL
+```
 
 | Archivo | Contenido |
 |---|---|
-| `README.md` | Caso de estudio ajustado, reglas de negocio y descripción de los modelos (este documento) |
-| `Historias_de_Usuario.pdf` / `.docx` | Especificación de requerimientos: 17 historias de usuario con criterios de aceptación |
-| `diagrama_mer.pdf` | Modelo Entidad-Asociación corregido (notación Barker) |
-| `diagrama_relacional.pdf` | Modelo relacional normalizado en 3FN |
-| `Modelo_Relacional_3FN_y_DF.pdf` / `.docx` | Esquema relacional, listado de dependencias funcionales y verificación 1FN–2FN–3FN |
-| `Diagramas segunda entrega.dmd` + `Diagramas segunda entrega/` | Diseño de Oracle SQL Developer Data Modeler (modelo lógico y relacional) |
-| `Target_Florida_DDL.sql` | Script DDL para Oracle generado a partir del modelo (tablas, PK, UK, CHECK y FK) |
-| `Bitacora_Seguimiento_Entrega2.pdf` / `.docx` | Bitácora de seguimiento de la Entrega 2 (áreas por integrante) |
-| `Acta_Reuniones_Entrega2.pdf` / `.docx` | Acta de las reuniones del equipo durante la Entrega 2 |
+| [`README.md`](README.md) | Caso de estudio ajustado, reglas de negocio y descripción de los modelos (este documento) |
+| **doc/** | |
+| [`Historias_de_Usuario.pdf`](doc/Historias_de_Usuario.pdf) / [`.docx`](doc/Historias_de_Usuario.docx) | Especificación de requerimientos: 17 historias de usuario con criterios de aceptación |
+| [`Modelo_Relacional_3FN_y_DF.pdf`](doc/Modelo_Relacional_3FN_y_DF.pdf) / [`.docx`](doc/Modelo_Relacional_3FN_y_DF.docx) | Esquema relacional, listado de dependencias funcionales y verificación 1FN–2FN–3FN |
+| [`Bitacora_Seguimiento_Entrega2.pdf`](doc/bitacoras/entrega2/Bitacora_Seguimiento_Entrega2.pdf) / [`.docx`](doc/bitacoras/entrega2/Bitacora_Seguimiento_Entrega2.docx) | Bitácora de seguimiento de la Entrega 2 (áreas por integrante) |
+| [`Bitacora_Seguimiento_Entrega3.pdf`](doc/bitacoras/entrega3/Bitacora_Seguimiento_Entrega3.pdf) / [`.docx`](doc/bitacoras/entrega3/Bitacora_Seguimiento_Entrega3.docx) | Bitácora de seguimiento de la Entrega 3 (áreas por integrante) |
+| [`Acta_Reuniones_Entrega2.pdf`](doc/reuniones/entrega2/Acta_Reuniones_Entrega2.pdf) / [`.docx`](doc/reuniones/entrega2/Acta_Reuniones_Entrega2.docx) | Acta de las reuniones del equipo durante la Entrega 2 |
+| [`Acta_Reuniones_Entrega3.pdf`](doc/reuniones/entrega3/Acta_Reuniones_Entrega3.pdf) / [`.docx`](doc/reuniones/entrega3/Acta_Reuniones_Entrega3.docx) | Acta de las reuniones del equipo durante la Entrega 3 |
+| [`Bitacora_IA_Entrega3.pdf`](doc/uso-ia/entrega3/Bitacora_IA_Entrega3.pdf) / [`.docx`](doc/uso-ia/entrega3/Bitacora_IA_Entrega3.docx) | Bitácora de uso de IA generativa en la Entrega 3: prompts, validación, reflexión y riesgos en un contexto profesional |
+| **model/** | |
+| [`diagrama_mer.pdf`](model/diagrama_mer.pdf) | Modelo Entidad-Asociación corregido (notación Barker) |
+| [`diagrama_relacional.pdf`](model/diagrama_relacional.pdf) | Modelo relacional normalizado en 3FN |
+| [`Diagramas_segunda_entrega.zip`](model/Diagramas_segunda_entrega.zip) | Fuentes de Oracle SQL Developer Data Modeler (`.dmd` + carpeta del diseño) |
+| **src/** | |
+| [`target-florida-ddl.sql`](src/target-florida-ddl.sql) | Script DDL: creación de las 25 tablas con PK, UNIQUE, CHECK y FK |
+| [`target-florida-dml.sql`](src/target-florida-dml.sql) | Script DML: datos de prueba para generar los reportes |
+| [`target-florida-dql.sql`](src/target-florida-dql.sql) | Script DQL: consultas de los 3 reportes |
+| [`target-florida-plsql.sql`](src/target-florida-plsql.sql) | Script PL/SQL: función, procedimiento almacenado y trigger, con sus pruebas |
 
+---
 
-## Descripción del caso
+## 2. Caso de estudio
 
-Este caso es **original**, basado en la operación real de una tienda minorista de ropa, de la cual es propietario un familiar de un miembro del grupo.
+> **Origen del caso:** Este caso es **original**, basado en la operación real de una tienda minorista de ropa, de la cual es propietario un familiar de un miembro del grupo.
 
-## Objetivo de la app
+### 2.1 Objetivo de la aplicación
 
 Diseñar e implementar la base de datos para un sistema transaccional que controle el inventario por prendas, variantes (talla, color, material), proveedores, ventas, apartados, encargos, pagos y devoluciones.
 
-## Enunciado (caso de estudio ajustado)
+### 2.2 Enunciado
 
 Target Florida es una tienda local de ropa que busca actualizar su servicio de gestión de inventario, proveedores y ventas para cambiar el control manual que se realiza a papel actualmente.
 
@@ -58,17 +108,19 @@ El personal de la tienda está conformado por empleados, de quienes se registra 
 
 Por último, las ventas se realizan en tienda física, detallando las variantes vendidas (producto, talla, color y material), la cantidad, el precio aplicado, el **cliente** y el **empleado** que la procesa, descontando automáticamente las existencias de cada variante vendida.
 
-## Reportes de interés
+### 2.3 Reportes de interés
 
-**Reporte 1 (Top Productos):** Listado del top 10 de prendas más vendidas en el último mes por categoría.
+| # | Reporte | Descripción |
+|---|---|---|
+| 1 | **Top productos** | Listado del top 10 de prendas más vendidas en el último mes por categoría. |
+| 2 | **Alertas de stock bajo** | Identificación de productos y prendas con existencias por debajo del umbral mínimo configurado para reabastecimiento. |
+| 3 | **Ventas por empleado** | Consolidado mensual de ingresos generados por cada vendedor para el cálculo de comisiones o descuentos en nómina. |
 
-**Reporte 2 (Alertas de Stock Bajo):** Identificación de productos y prendas con existencias por debajo del umbral mínimo configurado para reabastecimiento.
+---
 
-**Reporte 3 (Ventas por Empleado):** Entrega un consolidado mensual de ingresos generados por cada vendedor para cálculo de comisiones o descuento en nómina.
+## 3. Historias de usuario
 
-## Especificación de Requerimientos / Historias de Usuario
-
-La especificación completa está en [`Historias_de_Usuario.docx`](Historias_de_Usuario.docx): 17 historias (HU-01 a HU-17) con prioridad, estimación, criterios de aceptación y la forma en que el modelo las soporta. Resumen:
+La especificación completa está en [`doc/Historias_de_Usuario.pdf`](doc/Historias_de_Usuario.pdf): 17 historias (HU-01 a HU-17) con prioridad, estimación, criterios de aceptación y la forma en que el modelo las soporta. Resumen:
 
 | HU | Historia | Usuario |
 |---|---|---|
@@ -90,47 +142,38 @@ La especificación completa está en [`Historias_de_Usuario.docx`](Historias_de_
 | 16 | Alerta de existencias bajas | Administrador / Bodeguero |
 | 17 | Consolidado mensual de ventas por empleado | Administrador |
 
-## Reglas del Negocio (RN)
+---
 
-- **RN-01 (Identificación de Producto y SKU):** Cada prenda registrada debe pertenecer a una categoría y a una marca y poseer un código SKU único. Las prendas no se venden de forma genérica, sino a través de sus **variantes** (talla, color, material); la combinación producto + talla + color + material es única.
+## 4. Reglas de negocio
 
-- **RN-02 (Control Restrictivo de Inventario):** No se permite vender ni apartar una variante si la cantidad solicitada supera el stock disponible actual. Toda venta confirmada debe descontar en tiempo real las existencias de la variante vendida.
+| Código | Regla | Descripción |
+|---|---|---|
+| **RN-01** | Identificación de Producto y SKU | Cada prenda registrada debe pertenecer a una categoría y a una marca y poseer un código SKU único. Las prendas no se venden de forma genérica, sino a través de sus **variantes** (talla, color, material); la combinación producto + talla + color + material es única. |
+| **RN-02** | Control Restrictivo de Inventario | No se permite vender ni apartar una variante si la cantidad solicitada supera el stock disponible actual. Toda venta confirmada debe descontar en tiempo real las existencias de la variante vendida. |
+| **RN-03** | Umbral de Reabastecimiento | Cada variante tiene configurado un nivel de stock mínimo. Si el stock actual es menor o igual a este umbral, la variante queda en estado de *Alerta de Stock Bajo*. |
+| **RN-04** | Trazabilidad de Ventas y Comisiones | Toda venta debe estar asociada obligatoriamente a un **Empleado** (vendedor) y a un **Cliente** registrados. Un empleado no puede procesar ventas si su estado actual es inactivo. |
+| **RN-05** | Recepción de Mercancía de Proveedores | Toda entrada de mercancía a bodega debe estar vinculada a un **Proveedor** previamente registrado y activo, detallando el costo unitario de compra y las cantidades por variante. |
+| **RN-06** | Pagos | Cada pago pertenece a una venta o a un apartado, nunca a ambos, y la suma de los pagos no puede superar el total de la transacción. |
+| **RN-07** | Devoluciones sin efectivo | Una devolución siempre referencia la venta original y se resuelve solo con crédito de tienda o cambio. No se puede redimir más crédito que el saldo disponible del cliente. |
+| **RN-08** | Promociones | Una variante no puede pertenecer a dos promociones vigentes al mismo tiempo. |
 
-- **RN-03 (Umbral de Reabastecimiento):** Cada variante tiene configurado un nivel de stock mínimo. Si el stock actual es menor o igual a este umbral, la variante queda en estado de *Alerta de Stock Bajo*.
+---
 
-- **RN-04 (Trazabilidad de Ventas y Comisiones):** Toda venta debe estar asociada obligatoriamente a un **Empleado** (vendedor) y a un **Cliente** registrados. Un empleado no puede procesar ventas si su estado actual es inactivo.
+## 5. Acuerdos del equipo
 
-- **RN-05 (Recepción de Mercancía de Proveedores):** Toda entrada de mercancía a bodega debe estar vinculada a un **Proveedor** previamente registrado y activo, detallando el costo unitario de compra y las cantidades por variante.
+**Estrategia de trabajo:** uso de GitHub Classroom para el control de versiones del proyecto, revisiones semanales después de clase y división de roles (Líder/Coordinador, Diseñador de BD, Desarrollador SQL/PL-SQL y Documentador).
 
-- **RN-06 (Pagos):** Cada pago pertenece a una venta o a un apartado, nunca a ambos, y la suma de los pagos no puede superar el total de la transacción.
+---
 
-- **RN-07 (Devoluciones sin efectivo):** Una devolución siempre referencia la venta original y se resuelve solo con crédito de tienda o cambio. No se puede redimir más crédito que el saldo disponible del cliente.
+## 6. Modelo Entidad-Asociación (MER)
 
-- **RN-08 (Promociones):** Una variante no puede pertenecer a dos promociones vigentes al mismo tiempo.
+El MER está construido en Oracle SQL Developer Data Modeler en notación Barker (fuentes en `model/Diagramas_segunda_entrega.zip`, diagrama en `model/diagrama_mer.pdf`). Tiene **23 entidades** y **31 relaciones**. Cada entidad fuerte tiene su propio identificador; las entidades asociativas (detalles) se identifican por las relaciones con sus dos entidades padre (barra UID), y las relaciones N:M sin atributos se dibujan directamente como N:M.
 
-## Acuerdos del Equipo
-
-**Estrategia y Roles:** Uso de GitHub Classroom para versión del proyecto, revisiones semanales tras clase y división de roles (Líder/Coordinador, Diseñador de BD, Desarrollador SQL/PL-SQL y Documentador).
-
-**Cronograma Breve:**
-
-Semana 2: Entrega 0 (Caso escogido, requerimientos, acuerdos).
-
-Semana 5: Entrega 1 - Modelo ER (MER).
-
-Semana 10: Entrega 2 - Modelo Relacional Normalizado en 3FN. (Este documento)
-
-Semana 16-17: Entrega 3 - Scripts DDL/DML/DQL/PL-SQL y Sustentación.
-
-## Modelo Entidad-Asociación (MER) corregido
-
-El MER está construido en Oracle SQL Developer Data Modeler en notación Barker (diseño `Diagramas segunda entrega`, diagrama en `diagrama_mer.pdf`). Tiene **23 entidades** y **31 relaciones**. Cada entidad fuerte tiene su propio identificador; las entidades asociativas (detalles) se identifican por las relaciones con sus dos entidades padre (barra UID), y las relaciones N:M sin atributos se dibujan directamente como N:M.
-
-### Entidades y atributos
+### 6.1 Entidades y atributos
 
 **Personas y roles**
 
-- **PERSON (supertipo):** id (identificador), first_name, last_name, phone.
+- **PERSON (supertipo):** person_id (identificador), first_name, last_name, phone, person_type (C = cliente, E = empleado).
 - **CUSTOMER (subtipo de PERSON):** is_active.
 - **EMPLOYEE (subtipo de PERSON):** hire_date, is_active.
 - **ROLE:** role_id (identificador), name (único).
@@ -138,17 +181,17 @@ El MER está construido en Oracle SQL Developer Data Modeler en notación Barker
 **Catálogo**
 
 - **CATEGORY:** category_id (identificador), name (único).
-- **BRAND:** brand_id (identificador), brand_name (único).
+- **BRAND:** brand_id (identificador), name (único).
 - **PRODUCT:** product_id (identificador), sku (único), name, is_active, updated_at.
 - **VARIANT:** variant_id (identificador), variant_size (S–XXL), color, material, price, stock, min_stock_threshold.
 - **PROMOTION:** promotion_id (identificador), fixed_price, start_date, end_date.
 
 **Inventario y proveedores**
 
-- **SUPPLIER:** id (identificador), name, phone, building, local_number, is_active.
-- **BATCH:** id (identificador), entry_date.
+- **SUPPLIER:** supplier_id (identificador), name, phone, building, local_number, is_active.
+- **BATCH:** batch_id (identificador), entry_date.
 - **BATCH_DETAIL (asociativa BATCH–VARIANT):** quantity, unit_cost.
-- **INVENTORY_ADJUSTMENT:** id (identificador), quantity_change, reason, adjustment_date.
+- **INVENTORY_ADJUSTMENT:** adjustment_id (identificador), quantity_change, reason, adjustment_date.
 
 **Ventas, apartados, encargos y pagos**
 
@@ -157,7 +200,7 @@ El MER está construido en Oracle SQL Developer Data Modeler en notación Barker
 - **LAYAWAY:** layaway_id (identificador), created_date, due_date, status.
 - **LAYAWAY_DETAIL (asociativa LAYAWAY–VARIANT):** quantity, unit_price.
 - **SPECIAL_ORDER:** special_order_id (identificador), description, order_date, deposit_amount, status, origin_city.
-- **PAYMENT_METHOD:** id (identificador), name (único).
+- **PAYMENT_METHOD:** payment_method_id (identificador), name (único).
 - **PAYMENT:** payment_id (identificador), amount, payment_date.
 
 **Devoluciones y crédito**
@@ -166,7 +209,7 @@ El MER está construido en Oracle SQL Developer Data Modeler en notación Barker
 - **RETURN_DETAIL (asociativa RETURN–VARIANT):** quantity.
 - **STORE_CREDIT_MOVEMENT:** movement_id (identificador), movement_type (ABONO / REDENCION), amount, movement_date.
 
-### Relaciones
+### 6.2 Relaciones
 
 **Jerarquía**
 
@@ -182,7 +225,7 @@ El MER está construido en Oracle SQL Developer Data Modeler en notación Barker
 - **SALE — SALE_DETAIL — VARIANT:** una venta incluye una o varias variantes, con cantidad y precio aplicado.
 - **LAYAWAY — LAYAWAY_DETAIL — VARIANT:** un apartado reserva una o varias variantes.
 - **BATCH — BATCH_DETAIL — VARIANT:** un lote trae varias variantes, con cantidad y costo unitario.
-- **RETURN — RETURN_DETAIL — VARIANT:** una devolución incluye una o varias variantes devueltas.
+- **RETURN — RETURN_DETAIL — SALE_DETAIL:** una devolución incluye una o varias líneas de la venta original; cada variante devuelta tiene que haberse vendido en esa venta.
 
 **1:N**
 
@@ -204,25 +247,91 @@ El MER está construido en Oracle SQL Developer Data Modeler en notación Barker
 
 - **LAYAWAY — SALE** (opcional en ambos lados): un apartado completado genera exactamente una venta.
 
-## Modelo relacional normalizado (3FN)
+---
 
-El modelo relacional se obtiene del MER con las reglas de transformación de Data Modeler (diagrama en `diagrama_relacional.pdf`). Tiene **25 tablas** y **35 llaves foráneas**:
+## 7. Modelo relacional normalizado (3FN)
+
+El modelo relacional se obtiene del MER con las reglas de transformación de Data Modeler (diagrama en `model/diagrama_relacional.pdf`) y se implementa en [`src/target-florida-ddl.sql`](src/target-florida-ddl.sql). Tiene **25 tablas** y **35 llaves foráneas**.
+
+**Convenciones de nombres:** tablas en inglés y en plural (`CUSTOMERS`, `SALES`, `VARIANTS`); cada PK se llama `<entidad>_id` y la FK que la referencia usa el mismo nombre (`variant_id`, no `VARIANT_variant_id`); los constraints siguen el patrón `tabla_columna_pk / _uk / _ck / _nn` y `tabla_tablareferenciada_fk`.
+
+**Reglas de transformación aplicadas**
 
 - Cada entidad es una tabla con su identificador como PK.
 - Cada relación 1:N agrega una FK en la tabla del lado N; si la relación es obligatoria, la FK es NOT NULL.
-- Las dos N:M sin atributos generan las tablas intermedias **EMPLOYEE_ROLE** y **PROMOTION_VARIANT**, con PK compuesta por ambas FK.
-- Las entidades asociativas (SALE_DETAIL, LAYAWAY_DETAIL, BATCH_DETAIL, RETURN_DETAIL) tienen PK compuesta: venta, apartado, lote o devolución + variante.
-- La jerarquía se implementa con una tabla por tipo: CUSTOMER y EMPLOYEE usan como PK el mismo `id` de PERSON, que es también FK.
-- La 1:1 LAYAWAY–SALE es una FK única (`SALE.LAYAWAY_layaway_id`, UNIQUE).
+- Las dos N:M sin atributos generan las tablas intermedias **EMPLOYEE_ROLES** y **PROMOTION_VARIANTS**, con PK compuesta por ambas FK.
+- Las tablas de detalle (SALE_DETAILS, LAYAWAY_DETAILS, BATCH_DETAILS, RETURN_DETAILS) tienen PK compuesta: venta, apartado, lote o devolución + variante.
+- La jerarquía se implementa con una tabla por subtipo. CUSTOMERS y EMPLOYEES usan como PK el mismo id de PERSONS.
+- La 1:1 LAYAWAYS–SALES es una FK única y opcional (`sales.layaway_id`, UNIQUE).
 
-Además de las PK y FK, el modelo declara restricciones UNIQUE sobre las llaves candidatas (por ejemplo PRODUCT.sku y la combinación producto–talla–color–material de VARIANT), restricciones CHECK de dominio y de montos positivos, y arcos exclusivos en PAYMENT (venta o apartado) y STORE_CREDIT_MOVEMENT (devolución o pago).
+### 7.1 Correcciones de la Entrega 2
 
-**Normalización:**
+| Observación | Cómo se resolvió |
+|---|---|
+| Subtipos: una persona podía quedar como cliente y como empleado a la vez | PERSONS tiene un discriminador `person_type` ('C' / 'E') y un UNIQUE `(person_id, person_type)`. CUSTOMERS y EMPLOYEES guardan `person_type` fijo ('C' o 'E', con DEFAULT y CHECK) y tienen una **FK compuesta** `(id, person_type)` hacia PERSONS. Así una persona solo puede estar en uno de los dos subtipos. |
+| RETURN_DETAILS no garantizaba que la variante devuelta se hubiera vendido en la venta original | RETURN_DETAILS guarda `sale_id` y tiene dos FK compuestas: `(return_id, sale_id) → RETURNS` (la venta es la misma de la devolución) y `(sale_id, variant_id) → SALE_DETAILS` (la variante se vendió en esa venta). |
+| Consistencia del crédito de tienda | El CHECK de STORE_CREDIT_MOVEMENTS amarra el tipo con su origen: un ABONO siempre viene de una devolución y una REDENCION siempre viene de un pago. Que el cliente del movimiento coincida con el de la devolución o el pago se valida con el trigger `trg_scm_customer_check`. |
+| Dominios | Los atributos con valores fijos (`status`, `resolution_type`, `movement_type`, `variant_size`, `is_active`, `person_type`) se restringen con CHECK de dominio. |
+| Tablas en singular | Todas las tablas se renombraron en plural. |
+| Nombres de FK que repetían texto (`VARIANT_variant_id`) | Las FK usan el mismo nombre de la PK que referencian (`variant_id`). |
+
+**Restricciones adicionales:** UNIQUE sobre las llaves candidatas (por ejemplo `products.sku` y la combinación producto–talla–color–material de VARIANTS), CHECK de montos y cantidades positivas, CHECK de rangos de fechas (promociones y apartados) y arcos exclusivos en PAYMENTS (venta o apartado) y STORE_CREDIT_MOVEMENTS (devolución o pago).
+
+### 7.2 Normalización
 
 - **1FN:** todos los atributos son atómicos y no hay grupos repetidos. Las líneas de venta, apartado, lote y devolución están en tablas de detalle.
 - **2FN:** en las tablas con PK compuesta, los atributos no clave (cantidad, precio aplicado, costo unitario) dependen de la llave completa.
-- **3FN:** no hay dependencias transitivas. Por ejemplo, el nombre de la categoría o de la marca vive en su propia tabla y no en PRODUCT. Además, las columnas UNIQUE de STORE_CREDIT_MOVEMENT y SALE son llaves candidatas, de modo que todo determinante es llave.
+- **3FN:** no hay dependencias transitivas. Por ejemplo, el nombre de la categoría o de la marca vive en su propia tabla y no en PRODUCTS. Además, las columnas UNIQUE de STORE_CREDIT_MOVEMENTS y SALES son llaves candidatas, de modo que todo determinante es llave.
 
-**Atributos derivados:** `SALE.total` y `VARIANT.stock` se almacenan para que la validación de RN-02 y los reportes sean eficientes. No violan la 3FN porque dependen de otras filas, no de otro atributo de la misma fila.
+**Atributos derivados:** `sales.total` y `variants.stock` se almacenan para que la validación de RN-02 y los reportes sean eficientes. No violan la 3FN porque dependen de otras filas, no de otro atributo de la misma fila.
 
-El listado completo de dependencias funcionales por tabla y la verificación detallada están en `Modelo_Relacional_3FN_y_DF.pdf`. El script `Target_Florida_DDL.sql` crea las 25 tablas en Oracle con estas restricciones.
+El listado completo de dependencias funcionales por tabla y la verificación detallada están en [`doc/Modelo_Relacional_3FN_y_DF.pdf`](doc/Modelo_Relacional_3FN_y_DF.pdf).
+
+---
+
+## 8. Implementación
+
+Los scripts están en `src/` y se ejecutan en este orden: **DDL → DML → PL/SQL → DQL**.
+
+### 8.1 DDL — [`target-florida-ddl.sql`](src/target-florida-ddl.sql)
+
+Crea las 25 tablas con sus PK, UNIQUE, CHECK, NOT NULL y FK. Las reglas de negocio que dependen de otras filas o tablas (por ejemplo, el stock disponible o el saldo de crédito) no se pueden expresar con restricciones declarativas y se validan con PL/SQL.
+
+### 8.2 DML — [`target-florida-dml.sql`](src/target-florida-dml.sql)
+
+Carga los datos de prueba (272 registros). Las fechas son relativas a `SYSDATE`, para que el reporte del último mes siempre tenga datos sin importar cuándo se ejecute el script. Los datos son consistentes entre sí: el total de cada venta es igual a la suma de sus líneas, los pagos de cada venta suman su total y el stock de cada variante cuadra con los lotes, ventas, apartados vigentes, ajustes y devoluciones. Incluyen:
+
+- 15 personas (10 clientes y 5 empleados, uno inactivo de cada tipo), 15 productos y 30 variantes, 12 de ellas con stock bajo.
+- 26 ventas repartidas en tres meses, 4 apartados (vigente, completado, vencido y cancelado), 3 encargos, 2 promociones, 2 devoluciones y 3 movimientos de crédito.
+
+### 8.3 DQL — [`target-florida-dql.sql`](src/target-florida-dql.sql)
+
+| Reporte | Qué muestra | Técnicas SQL |
+|---|---|---|
+| **1. Top productos** | Las 10 prendas más vendidas del último mes, con su categoría, marca, unidades e ingresos | INNER JOIN, filtro de fechas, GROUP BY, ORDER BY, TOP (`FETCH FIRST 10 ROWS ONLY`) |
+| **2. Alertas de stock bajo** | Las variantes con stock menor o igual a su umbral (RN-03), con las unidades que faltan | INNER JOIN, columna calculada, ORDER BY |
+| **3. Ventas por empleado** | El consolidado mensual de ventas e ingresos de cada empleado, para comisiones o descuentos de nómina | LEFT (OUTER) JOIN, GROUP BY por mes, COUNT, SUM, NVL, ORDER BY |
+
+### 8.4 PL/SQL — [`target-florida-plsql.sql`](src/target-florida-plsql.sql)
+
+| Objeto | Tipo | Qué hace |
+|---|---|---|
+| `fn_customer_credit_balance` | Función | Devuelve el saldo de crédito de tienda de un cliente: abonos menos redenciones (RN-07). |
+| `sp_register_adjustment` | Procedimiento | Registra un ajuste de inventario y actualiza el stock en la misma transacción. Valida que el empleado esté activo y que el stock no quede negativo. |
+| `trg_scm_customer_check` | Trigger | Antes de insertar o actualizar un movimiento de crédito, verifica que su cliente sea el de la devolución o el del pago relacionado (corrección de la Entrega 2). |
+
+Al final del script hay una sección de pruebas con casos válidos y casos que deben fallar.
+
+---
+
+## 9. Cómo ejecutar los scripts
+
+Los scripts están pensados para ejecutarse en un esquema de Oracle vacío, en este orden:
+
+| Paso | Script | Qué hace |
+|---|---|---|
+| 1 | [`src/target-florida-ddl.sql`](src/target-florida-ddl.sql) | Crea las 25 tablas y sus restricciones |
+| 2 | [`src/target-florida-dml.sql`](src/target-florida-dml.sql) | Carga los datos de prueba y hace `COMMIT` |
+| 3 | [`src/target-florida-plsql.sql`](src/target-florida-plsql.sql) | Crea la función, el procedimiento y el trigger, y corre sus pruebas |
+| 4 | [`src/target-florida-dql.sql`](src/target-florida-dql.sql) | Ejecuta los 3 reportes |
+
