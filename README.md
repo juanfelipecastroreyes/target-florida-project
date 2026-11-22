@@ -71,7 +71,7 @@ target-florida-project/
 | **model/** | |
 | [`diagrama_mer.pdf`](model/diagrama_mer.pdf) | Modelo Entidad-Asociación corregido (notación Barker) |
 | [`diagrama_relacional.pdf`](model/diagrama_relacional.pdf) | Modelo relacional normalizado en 3FN |
-| [`Diagramas_mer_relacional.zip)`](model/Diagramas_mer_relacional.zip) | Fuentes de Oracle SQL Developer Data Modeler (`.dmd` + carpeta del diseño) |
+| [`Diagramas_mer_relacional.zip`](model/Diagramas_mer_relacional.zip) | Fuentes de Oracle SQL Developer Data Modeler (`.dmd` + carpeta del diseño) |
 | **src/** | |
 | [`target-florida-ddl.sql`](src/target-florida-ddl.sql) | Script DDL: creación de las 25 tablas con PK, UNIQUE, CHECK y FK |
 | [`target-florida-dml.sql`](src/target-florida-dml.sql) | Script DML: datos de prueba para generar los reportes |
