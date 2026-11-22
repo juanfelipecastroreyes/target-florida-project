@@ -1,4 +1,5 @@
--- REPORTE 1: Top 10 de prendas mas vendidas en el ultimo mes.
+-- REPORTE 1: Top 10 general de prendas mas vendidas en el ultimo mes.
+-- Es un unico ranking para toda la tienda (no un top 10 dentro de cada categoria).
 -- Muestra la categoria, el producto y la marca de cada prenda, con las
 -- unidades vendidas y lo que se recaudo, ordenado de la mas vendida a la menos.
 SELECT categories.name AS categoria, products.name AS producto, brands.name AS marca, SUM(sale_details.quantity) AS unidades_vendidas, SUM(sale_details.quantity * sale_details.applied_price) AS ingresos

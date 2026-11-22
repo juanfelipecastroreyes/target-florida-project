@@ -1,6 +1,7 @@
 -- =====================================================================
 -- Target Florida — Script DDL (Oracle)
--- Crea las 25 tablas del modelo relacional en 3FN, en orden de dependencia.
+-- Crea las 25 tablas del modelo relacional en 3FN, en orden de dependencia,
+-- y la secuencia inv_adj_seq para los ajustes de inventario.
 -- =====================================================================
 
 -- ---------------------------------------------------------------------
@@ -275,6 +276,11 @@ CREATE TABLE inventory_adjustments (
    CONSTRAINT inv_adj_variants_fk FOREIGN KEY(variant_id) REFERENCES variants(variant_id),
    CONSTRAINT inv_adj_employees_fk FOREIGN KEY(employee_id) REFERENCES employees(employee_id)
 );
+
+-- INV_ADJ_SEQ: genera los identificadores de INVENTORY_ADJUSTMENTS.
+-- La usan el DML y el procedimiento sp_register_adjustment, para que dos
+-- usuarios que registren ajustes al mismo tiempo nunca obtengan el mismo id.
+CREATE SEQUENCE inv_adj_seq START WITH 1 INCREMENT BY 1 NOCACHE;
 
 -- PROMOTION_VARIANTS: tabla intermedia de la relación N:M entre promociones
 -- y variantes. PK compuesta.

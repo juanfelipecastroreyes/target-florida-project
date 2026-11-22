@@ -59,8 +59,10 @@ target-florida-project/
 |---|---|
 | [`README.md`](README.md) | Caso de estudio ajustado, reglas de negocio y descripción de los modelos (este documento) |
 | **doc/** | |
+| [`Descripcion_del_Caso.pdf`](doc/bitacoras/entrega1/Descripcion_del_Caso.pdf) / [`.docx`](doc/bitacoras/entrega1/Descripcion_del_Caso.docx) | Descripción del caso ajustado: objetivo, enunciado, reportes, reglas de negocio y origen (caso original) |
 | [`Historias_de_Usuario.pdf`](doc/Historias_de_Usuario.pdf) / [`.docx`](doc/Historias_de_Usuario.docx) | Especificación de requerimientos: 17 historias de usuario con criterios de aceptación |
 | [`Modelo_Relacional_3FN_y_DF.pdf`](doc/Modelo_Relacional_3FN_y_DF.pdf) / [`.docx`](doc/Modelo_Relacional_3FN_y_DF.docx) | Esquema relacional, listado de dependencias funcionales y verificación 1FN–2FN–3FN |
+| [`Acuerdos_del_Equipo.pdf`](doc/bitacoras/entrega1/Acuerdos_del_Equipo.pdf) / [`.docx`](doc/bitacoras/entrega1/Acuerdos_del_Equipo.docx) | Acuerdos de trabajo en equipo: estrategia, roles, responsabilidades y cronograma |
 | [`Bitacora_Seguimiento_Entrega2.pdf`](doc/bitacoras/entrega2/Bitacora_Seguimiento_Entrega2.pdf) / [`.docx`](doc/bitacoras/entrega2/Bitacora_Seguimiento_Entrega2.docx) | Bitácora de seguimiento de la Entrega 2 (áreas por integrante) |
 | [`Bitacora_Seguimiento_Entrega3.pdf`](doc/bitacoras/entrega3/Bitacora_Seguimiento_Entrega3.pdf) / [`.docx`](doc/bitacoras/entrega3/Bitacora_Seguimiento_Entrega3.docx) | Bitácora de seguimiento de la Entrega 3 (áreas por integrante) |
 | [`Acta_Reuniones_Entrega2.pdf`](doc/reuniones/entrega2/Acta_Reuniones_Entrega2.pdf) / [`.docx`](doc/reuniones/entrega2/Acta_Reuniones_Entrega2.docx) | Acta de las reuniones del equipo durante la Entrega 2 |
@@ -112,7 +114,7 @@ Por último, las ventas se realizan en tienda física, detallando las variantes 
 
 | # | Reporte | Descripción |
 |---|---|---|
-| 1 | **Top productos** | Listado del top 10 de prendas más vendidas en el último mes por categoría. |
+| 1 | **Top productos** | Listado del top 10 general de prendas más vendidas en el último mes, mostrando la categoría de cada prenda. |
 | 2 | **Alertas de stock bajo** | Identificación de productos y prendas con existencias por debajo del umbral mínimo configurado para reabastecimiento. |
 | 3 | **Ventas por empleado** | Consolidado mensual de ingresos generados por cada vendedor para el cálculo de comisiones o descuentos en nómina. |
 
@@ -161,7 +163,18 @@ La especificación completa está en [`doc/Historias_de_Usuario.pdf`](doc/Histor
 
 ## 5. Acuerdos del equipo
 
-**Estrategia de trabajo:** uso de GitHub Classroom para el control de versiones del proyecto, revisiones semanales después de clase y división de roles (Líder/Coordinador, Diseñador de BD, Desarrollador SQL/PL-SQL y Documentador).
+**Estrategia de trabajo:** uso de GitHub Classroom para el control de versiones del proyecto, revisiones semanales después de clase y organización por áreas: cada integrante lidera un área de la entrega con el mismo nivel de responsabilidad.
+
+**Cronograma:**
+
+| Semana | Entrega | Contenido | Estado |
+|:---:|:---|:---|:---|
+| 2 | Entrega 0 | Caso de estudio, requerimientos y acuerdos | Entregada |
+| 5 | Entrega 1 | Modelo Entidad-Asociación (MER) | Entregada |
+| 10 | Entrega 2 | Modelo relacional normalizado en 3FN | Entregada |
+| 16–17 | Entrega 3 | Scripts DDL, DML, DQL y PL/SQL + sustentación | Entrega actual |
+
+**Roles y responsabilidades:** el documento completo está en [`doc/bitacoras/entrega1/Acuerdos_del_Equipo.pdf`](doc/bitacoras/entrega1/Acuerdos_del_Equipo.pdf). El reparto de áreas por integrante de cada entrega está en las bitácoras de seguimiento ([Entrega 2](doc/bitacoras/entrega2/Bitacora_Seguimiento_Entrega2.pdf), [Entrega 3](doc/bitacoras/entrega3/Bitacora_Seguimiento_Entrega3.pdf)).
 
 ---
 
@@ -295,7 +308,7 @@ Los scripts están en `src/` y se ejecutan en este orden: **DDL → DML → PL/S
 
 ### 8.1 DDL — [`target-florida-ddl.sql`](src/target-florida-ddl.sql)
 
-Crea las 25 tablas con sus PK, UNIQUE, CHECK, NOT NULL y FK. Las reglas de negocio que dependen de otras filas o tablas (por ejemplo, el stock disponible o el saldo de crédito) no se pueden expresar con restricciones declarativas y se validan con PL/SQL.
+Crea las 25 tablas con sus PK, UNIQUE, CHECK, NOT NULL y FK, y la secuencia `inv_adj_seq`, que genera los ids de los ajustes de inventario. Algunas reglas de negocio dependen de otras filas o tablas y no se pueden expresar con restricciones declarativas. De ellas, la consistencia del cliente en los movimientos de crédito se valida con el trigger `trg_scm_customer_check`, y el control de stock en las ventas (RN-02) con el trigger `trg_sale_details_stock`. Las demás (RN-04 empleado activo, RN-06 suma de pagos, RN-07 saldo de crédito y RN-08 promociones vigentes) quedan fuera del alcance de esta entrega y corresponderían a la lógica de la aplicación o a triggers adicionales.
 
 ### 8.2 DML — [`target-florida-dml.sql`](src/target-florida-dml.sql)
 
@@ -308,7 +321,7 @@ Carga los datos de prueba (272 registros). Las fechas son relativas a `SYSDATE`,
 
 | Reporte | Qué muestra | Técnicas SQL |
 |---|---|---|
-| **1. Top productos** | Las 10 prendas más vendidas del último mes, con su categoría, marca, unidades e ingresos | INNER JOIN, filtro de fechas, GROUP BY, ORDER BY, TOP (`FETCH FIRST 10 ROWS ONLY`) |
+| **1. Top productos** | Top 10 general de las prendas más vendidas del último mes, con su categoría, marca, unidades e ingresos | INNER JOIN, filtro de fechas, GROUP BY, ORDER BY, TOP (`FETCH FIRST 10 ROWS ONLY`) |
 | **2. Alertas de stock bajo** | Las variantes con stock menor o igual a su umbral (RN-03), con las unidades que faltan | INNER JOIN, columna calculada, ORDER BY |
 | **3. Ventas por empleado** | El consolidado mensual de ventas e ingresos de cada empleado, para comisiones o descuentos de nómina | LEFT (OUTER) JOIN, GROUP BY por mes, COUNT, SUM, NVL, ORDER BY |
 
@@ -319,8 +332,9 @@ Carga los datos de prueba (272 registros). Las fechas son relativas a `SYSDATE`,
 | `fn_customer_credit_balance` | Función | Devuelve el saldo de crédito de tienda de un cliente: abonos menos redenciones (RN-07). |
 | `sp_register_adjustment` | Procedimiento | Registra un ajuste de inventario y actualiza el stock en la misma transacción. Valida que el empleado esté activo y que el stock no quede negativo. |
 | `trg_scm_customer_check` | Trigger | Antes de insertar o actualizar un movimiento de crédito, verifica que su cliente sea el de la devolución o el del pago relacionado (corrección de la Entrega 2). |
+| `trg_sale_details_stock` | Trigger | Antes de insertar una línea de venta, verifica que la variante tenga stock suficiente y lo descuenta automáticamente (RN-02). Si la venta viene de un apartado, no descuenta de nuevo porque el stock ya estaba reservado. |
 
-Al final del script hay una sección de pruebas con casos válidos y casos que deben fallar.
+Al final del script hay una sección de pruebas con casos válidos y casos que deben fallar. El procedimiento no hace `COMMIT`, así que el `ROLLBACK` final deshace todas las pruebas y los datos quedan como los dejó el DML (la consola debe estar en modo de transacción manual).
 
 ---
 
@@ -330,8 +344,8 @@ Los scripts están pensados para ejecutarse en un esquema de Oracle vacío, en e
 
 | Paso | Script | Qué hace |
 |---|---|---|
-| 1 | [`src/target-florida-ddl.sql`](src/target-florida-ddl.sql) | Crea las 25 tablas y sus restricciones |
+| 1 | [`src/target-florida-ddl.sql`](src/target-florida-ddl.sql) | Crea las 25 tablas, sus restricciones y la secuencia de ajustes |
 | 2 | [`src/target-florida-dml.sql`](src/target-florida-dml.sql) | Carga los datos de prueba y hace `COMMIT` |
-| 3 | [`src/target-florida-plsql.sql`](src/target-florida-plsql.sql) | Crea la función, el procedimiento y el trigger, y corre sus pruebas |
+| 3 | [`src/target-florida-plsql.sql`](src/target-florida-plsql.sql) | Crea la función, el procedimiento y los triggers, y corre sus pruebas |
 | 4 | [`src/target-florida-dql.sql`](src/target-florida-dql.sql) | Ejecuta los 3 reportes |
 

@@ -185,10 +185,10 @@ INSERT INTO batch_details (batch_id, variant_id, quantity, unit_cost) VALUES (4,
 INSERT INTO batch_details (batch_id, variant_id, quantity, unit_cost) VALUES (5, 30, 3, 45000);
 
 -- ========== INVENTORY_ADJUSTMENTS ==========
-INSERT INTO inventory_adjustments (adjustment_id, quantity_change, reason, adjustment_date, variant_id, employee_id) VALUES (1, -1, 'Prenda dañada en exhibicion', TRUNC(SYSDATE) - 60, 5, 14);
-INSERT INTO inventory_adjustments (adjustment_id, quantity_change, reason, adjustment_date, variant_id, employee_id) VALUES (2, -2, 'Perdida en conteo fisico', TRUNC(SYSDATE) - 45, 12, 14);
-INSERT INTO inventory_adjustments (adjustment_id, quantity_change, reason, adjustment_date, variant_id, employee_id) VALUES (3, 1, 'Sobrante en conteo fisico', TRUNC(SYSDATE) - 30, 8, 12);
-INSERT INTO inventory_adjustments (adjustment_id, quantity_change, reason, adjustment_date, variant_id, employee_id) VALUES (4, -1, 'Mancha irreparable', TRUNC(SYSDATE) - 20, 17, 14);
+INSERT INTO inventory_adjustments (adjustment_id, quantity_change, reason, adjustment_date, variant_id, employee_id) VALUES (inv_adj_seq.NEXTVAL, -1, 'Prenda dañada en exhibicion', TRUNC(SYSDATE) - 60, 5, 14);
+INSERT INTO inventory_adjustments (adjustment_id, quantity_change, reason, adjustment_date, variant_id, employee_id) VALUES (inv_adj_seq.NEXTVAL, -2, 'Perdida en conteo fisico', TRUNC(SYSDATE) - 45, 12, 14);
+INSERT INTO inventory_adjustments (adjustment_id, quantity_change, reason, adjustment_date, variant_id, employee_id) VALUES (inv_adj_seq.NEXTVAL, 1, 'Sobrante en conteo fisico', TRUNC(SYSDATE) - 30, 8, 12);
+INSERT INTO inventory_adjustments (adjustment_id, quantity_change, reason, adjustment_date, variant_id, employee_id) VALUES (inv_adj_seq.NEXTVAL, -1, 'Mancha irreparable', TRUNC(SYSDATE) - 20, 17, 14);
 
 -- ========== LAYAWAYS ==========
 INSERT INTO layaways (layaway_id, created_date, due_date, status, customer_id, employee_id) VALUES (1, TRUNC(SYSDATE) - 40, TRUNC(SYSDATE) - 10, 'COMPLETADO', 3, 12);
